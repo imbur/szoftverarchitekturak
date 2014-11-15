@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/hu.bme.mit.mercury/src" modelPluginID="hu.bme.mit.mercury"
+    modelName="Mercury" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>mercury.ecore</foreignModel>
+  <genPackages prefix="Mercury" disposableProviderFactory="true" ecorePackage="mercury.ecore#/">
+    <genClasses ecoreClass="mercury.ecore#//OrganizationUnit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//OrganizationUnit/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="mercury.ecore#//Variable"/>
+    <genClasses ecoreClass="mercury.ecore#//Program"/>
+    <genClasses ecoreClass="mercury.ecore#//Function"/>
+    <genClasses ecoreClass="mercury.ecore#//AllocationUnit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//AllocationUnit/organizationUnits"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

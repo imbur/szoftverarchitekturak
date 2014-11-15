@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mercury" nsURI="http://www.example.org/mercury" nsPrefix="mercury">
+  <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
+        eType="#//Variable" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Program" eSuperTypes="#//OrganizationUnit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//OrganizationUnit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="organizationUnits" upperBound="-1"
+        eType="#//OrganizationUnit" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>
