@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mercury:AllocationUnit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mercury="http://www.example.org/mercury">
+  <organizationUnits>
+    <variables/>
+  </organizationUnits>
+  <organizationUnits/>
+</mercury:AllocationUnit>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:mercury="http://www.example.org/mercury" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_EETkcGxjEeS6Wramz4bVLQ" selectedViews="_FOAXcGxjEeS6Wramz4bVLQ" version="8.1.1">
+  <models xmi:type="mercury:AllocationUnit" href="sample.mercury#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_FOAXcGxjEeS6Wramz4bVLQ" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_J3o1AGxjEeS6Wramz4bVLQ" name="new PLC diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_J38XAGxjEeS6Wramz4bVLQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_J38XAWxjEeS6Wramz4bVLQ" type="Sirius" element="_J3o1AGxjEeS6Wramz4bVLQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_pffMgGxjEeS6Wramz4bVLQ" type="2001" element="_pfRxIGxjEeS6Wramz4bVLQ">
+            <children xmi:type="notation:Node" xmi:id="_pfjd8GxjEeS6Wramz4bVLQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_pfjd8WxjEeS6Wramz4bVLQ" x="21" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_udA2cGxjEeS6Wramz4bVLQ" type="3016" element="_uc6v0GxjEeS6Wramz4bVLQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_udA2cWxjEeS6Wramz4bVLQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_udA2cmxjEeS6Wramz4bVLQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pffMgWxjEeS6Wramz4bVLQ" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pffMgmxjEeS6Wramz4bVLQ" x="84" y="120" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pflTIGxjEeS6Wramz4bVLQ" type="2001" element="_pfWCkGxjEeS6Wramz4bVLQ">
+            <children xmi:type="notation:Node" xmi:id="_pfmhQGxjEeS6Wramz4bVLQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_pfmhQWxjEeS6Wramz4bVLQ" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_udD5wGxjEeS6Wramz4bVLQ" type="3016" element="_uc9zIGxjEeS6Wramz4bVLQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_udD5wWxjEeS6Wramz4bVLQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_udD5wmxjEeS6Wramz4bVLQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pflTIWxjEeS6Wramz4bVLQ" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pflTImxjEeS6Wramz4bVLQ" x="84" y="168" width="20" height="20"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_J38-EGxjEeS6Wramz4bVLQ"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pfRxIGxjEeS6Wramz4bVLQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="mercury:OrganizationUnit" href="sample.mercury#//@organizationUnits.0"/>
+        <semanticElements xmi:type="mercury:OrganizationUnit" href="sample.mercury#//@organizationUnits.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_uc6v0GxjEeS6Wramz4bVLQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_uc6v0WxjEeS6Wramz4bVLQ"/>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']/@defaultLayer/@nodeMappings[name='OrganizationUnitNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_uc6v0mxjEeS6Wramz4bVLQ"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_uc6v02xjEeS6Wramz4bVLQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']/@defaultLayer/@nodeMappings[name='OrganizationUnitNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pfWCkGxjEeS6Wramz4bVLQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="mercury:OrganizationUnit" href="sample.mercury#//@organizationUnits.1"/>
+        <semanticElements xmi:type="mercury:OrganizationUnit" href="sample.mercury#//@organizationUnits.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_uc9zIGxjEeS6Wramz4bVLQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_uc9zIWxjEeS6Wramz4bVLQ"/>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']/@defaultLayer/@nodeMappings[name='OrganizationUnitNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_uc9zImxjEeS6Wramz4bVLQ"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_uc9zI2xjEeS6Wramz4bVLQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']/@defaultLayer/@nodeMappings[name='OrganizationUnitNode']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_J3qDIGxjEeS6Wramz4bVLQ"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='PLC%20diagram']/@defaultLayer"/>
+      <target xmi:type="mercury:AllocationUnit" href="sample.mercury#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/mercuryView/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
