@@ -36,9 +36,6 @@
               <children xmi:type="notation:Node" xmi:id="_KMwOYG6dEeSrG9nXee3wHg" type="3010" element="_KMdTcG6dEeSrG9nXee3wHg">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_KMwOYW6dEeSrG9nXee3wHg"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_BLhpAG6eEeSrG9nXee3wHg" type="3010" element="_BLRxYG6eEeSrG9nXee3wHg">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_BLhpAW6eEeSrG9nXee3wHg"/>
-              </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_wnaORWxfEeSMVejMimGboQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_wnaORmxfEeSMVejMimGboQ"/>
             </children>
@@ -604,11 +601,6 @@
             <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </computedStyleDescriptions>
-          <computedStyleDescriptions xmi:type="style:BundledImageDescription" xmi:id="_DJTb5m9wEeSNlOi9T2uzlw" labelFormat="bold" labelExpression="service:render" labelAlignment="LEFT" tooltipExpression="service:renderTooltip" sizeComputationExpression="1">
-            <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </computedStyleDescriptions>
           <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_DJYUYm9wEeSNlOi9T2uzlw" sourceArrow="FillDiamond" sizeComputationExpression="1" routingStyle="manhattan">
             <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_DJYUY29wEeSNlOi9T2uzlw" showIcon="false" labelExpression="service:render">
@@ -826,14 +818,6 @@
                 </value>
               </value>
             </value>
-            <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_DJTb5G9wEeSNlOi9T2uzlw">
-              <key xmi:type="ecore:EAttribute" href="mercury.ecore#//Variable/value"/>
-              <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_DJTb5W9wEeSNlOi9T2uzlw" key="_BLRxYG6eEeSrG9nXee3wHg">
-                <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_DJTb529wEeSNlOi9T2uzlw" value="_DJTb5m9wEeSNlOi9T2uzlw">
-                  <key xmi:type="ecore:EClass" href="mercury.ecore#//Variable"/>
-                </value>
-              </value>
-            </value>
           </cache>
         </data>
       </ownedAnnotationEntries>
@@ -873,16 +857,6 @@
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_DJTb4W9wEeSNlOi9T2uzlw"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_DJTb4m9wEeSNlOi9T2uzlw"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_DJTb429wEeSNlOi9T2uzlw"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-        </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_BLRxYG6eEeSrG9nXee3wHg" name="value : EString" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="mercury.ecore#//Variable/value"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="mercury.ecore#//Variable/value"/>
-          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_DJTb6G9wEeSNlOi9T2uzlw" labelFormat="bold" labelAlignment="LEFT" description="_DJTb5m9wEeSNlOi9T2uzlw">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_DJTb6W9wEeSNlOi9T2uzlw"/>
-            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_DJTb6m9wEeSNlOi9T2uzlw"/>
-            <color xmi:type="viewpoint:RGBValues" xmi:id="_DJTb629wEeSNlOi9T2uzlw"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>

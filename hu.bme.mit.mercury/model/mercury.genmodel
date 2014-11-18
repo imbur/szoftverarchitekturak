@@ -19,7 +19,7 @@
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//Variable">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mercury.ecore#//Variable/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mercury.ecore#//Variable/value"/>
+      <genFeatures createChild="false"/>
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//Program">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//Program/functionCalls"/>
