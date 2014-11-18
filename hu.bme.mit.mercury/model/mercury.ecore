@@ -44,7 +44,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
         eType="#//FunctionOutputVariableReference" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionInputVariableReference" eSuperTypes="#//InputVariableRefrence">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionInputVariableReference" eSuperTypes="#//InputVariableReference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//FunctionOutputVariableReference"
         eOpposite="#//FunctionOutputVariableReference/target"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="programSource" eType="#//ProgramInputVariableReference"
@@ -56,7 +56,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="programTarget" upperBound="-1"
         eType="#//ProgramOutputVariableReference" eOpposite="#//ProgramOutputVariableReference/source"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProgramInputVariableReference" eSuperTypes="#//InputVariableRefrence">
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramInputVariableReference" eSuperTypes="#//InputVariableReference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
         eType="#//FunctionInputVariableReference" eOpposite="#//FunctionInputVariableReference/programSource"/>
   </eClassifiers>
@@ -64,7 +64,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
         eType="#//OutputVariable"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="InputVariableRefrence">
+  <eClassifiers xsi:type="ecore:EClass" name="InputVariableReference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
         eType="#//InputVariable"/>
   </eClassifiers>
