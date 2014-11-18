@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mercury" nsURI="http://www.example.org/mercury" nsPrefix="mercury">
-  <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit" abstract="true" eSuperTypes="#//NewEClass15">
+  <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit" abstract="true" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inputVariables" upperBound="-1"
         eType="#//InputVariable" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="usedFunctionBlocks" upperBound="-1"
-        eType="#//FunctionBlock"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="outputVariables" upperBound="-1"
         eType="#//OutputVariable" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true" eSuperTypes="#//NewEClass15">
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
@@ -22,7 +20,7 @@
         eType="#//ProgramOutputVariableReference" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionBlock" eSuperTypes="#//OrganizationUnit"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit" eSuperTypes="#//NewEClass15">
+  <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="programs" upperBound="-1"
         eType="#//Program" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="functionBlocks" upperBound="-1"
@@ -72,7 +70,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
         eType="#//FunctionOutputVariableReference" eOpposite="#//FunctionOutputVariableReference/programTarget"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NewEClass15" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
