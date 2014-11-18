@@ -2,18 +2,24 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mercury" nsURI="http://www.example.org/mercury" nsPrefix="mercury">
   <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
-        eType="#//Variable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputVariables" upperBound="-1"
+        eType="#//InputVariable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="usedFunctionBlocks" upperBound="-1"
         eType="#//FunctionBlock"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputVariables" upperBound="-1"
+        eType="#//OutputVariable" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Program" eSuperTypes="#//OrganizationUnit">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="functionBlockDiagram" lowerBound="1"
-        eType="#//BlockDiagram" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionCalls" lowerBound="1"
+        upperBound="-1" eType="#//FunctionCall" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputs" upperBound="-1"
+        eType="#//ProgramInputVariableReference" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
+        eType="#//ProgramOutputVariableReference" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionBlock" eSuperTypes="#//OrganizationUnit"/>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit">
@@ -30,18 +36,40 @@
     <eLiterals name="Boolean"/>
     <eLiterals name="Double"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BlockDiagram">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="functionCalls" upperBound="-1"
-        eType="#//FunctionCall" containment="true"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionCall">
     <eStructuralFeatures xsi:type="ecore:EReference" name="calledFunction" lowerBound="1"
         eType="#//FunctionBlock"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
-        eType="#//VariableReference" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputs" upperBound="-1"
+        eType="#//FunctionInputVariableReference" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
+        eType="#//FunctionOutputVariableReference" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VariableReference">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionInputVariableReference" eSuperTypes="#//InputVariableRefrence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//FunctionOutputVariableReference"
+        eOpposite="#//FunctionOutputVariableReference/target"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="programSource" eType="#//ProgramInputVariableReference"
+        eOpposite="#//ProgramInputVariableReference/target"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionOutputVariableReference" eSuperTypes="#//OutputVariableReference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
+        eType="#//FunctionInputVariableReference" eOpposite="#//FunctionInputVariableReference/source"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="programTarget" upperBound="-1"
+        eType="#//ProgramOutputVariableReference" eOpposite="#//ProgramOutputVariableReference/source"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramInputVariableReference" eSuperTypes="#//InputVariableRefrence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
+        eType="#//FunctionInputVariableReference" eOpposite="#//FunctionInputVariableReference/programSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputVariableReference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
-        eType="#//Variable"/>
+        eType="#//OutputVariable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InputVariableRefrence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        eType="#//InputVariable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramOutputVariableReference" eSuperTypes="#//OutputVariableReference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//FunctionOutputVariableReference" eOpposite="#//FunctionOutputVariableReference/programTarget"/>
   </eClassifiers>
 </ecore:EPackage>
