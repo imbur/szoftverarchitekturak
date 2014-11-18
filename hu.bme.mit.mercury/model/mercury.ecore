@@ -30,7 +30,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InputVariable" eSuperTypes="#//Variable"/>
   <eClassifiers xsi:type="ecore:EClass" name="OutputVariable" eSuperTypes="#//Variable"/>
-  <eClassifiers xsi:type="ecore:EEnum" name="VariableType" instanceClassName="1">
+  <eClassifiers xsi:type="ecore:EEnum" name="VariableType" instanceClassName="java.lang.Enum">
     <eLiterals name="Integer"/>
     <eLiterals name="String" value="1"/>
     <eLiterals name="Boolean" value="2"/>
