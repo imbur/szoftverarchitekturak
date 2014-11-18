@@ -11,9 +11,9 @@
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//Variable"/>
     <genClasses ecoreClass="mercury.ecore#//Program"/>
-    <genClasses ecoreClass="mercury.ecore#//Function"/>
+    <genClasses ecoreClass="mercury.ecore#//FunctionBlock"/>
     <genClasses ecoreClass="mercury.ecore#//AllocationUnit">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//AllocationUnit/organizationUnits"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//AllocationUnit/programs"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

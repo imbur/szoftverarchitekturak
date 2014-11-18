@@ -4,12 +4,44 @@
   <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
         eType="#//Variable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedFunctionBlocks" upperBound="-1"
+        eType="#//FunctionBlock"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Variable"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Program" eSuperTypes="#//OrganizationUnit"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//OrganizationUnit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Program" eSuperTypes="#//OrganizationUnit">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionBlockDiagram" lowerBound="1"
+        eType="#//BlockDiagram" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionBlock" eSuperTypes="#//OrganizationUnit"/>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="organizationUnits" upperBound="-1"
-        eType="#//OrganizationUnit" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="programs" upperBound="-1"
+        eType="#//Program" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionBlocks" upperBound="-1"
+        eType="#//FunctionBlock" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InputVariable" eSuperTypes="#//Variable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputVariable" eSuperTypes="#//Variable"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="VariableType" instanceClassName="1">
+    <eLiterals name="Integer"/>
+    <eLiterals name="String"/>
+    <eLiterals name="Boolean"/>
+    <eLiterals name="Double"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BlockDiagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionCalls" upperBound="-1"
+        eType="#//FunctionCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionCall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calledFunction" lowerBound="1"
+        eType="#//FunctionBlock"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
+        eType="#//VariableReference" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariableReference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        eType="#//Variable"/>
   </eClassifiers>
 </ecore:EPackage>
