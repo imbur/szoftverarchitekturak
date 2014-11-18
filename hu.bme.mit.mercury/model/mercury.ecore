@@ -32,9 +32,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="OutputVariable" eSuperTypes="#//Variable"/>
   <eClassifiers xsi:type="ecore:EEnum" name="VariableType" instanceClassName="1">
     <eLiterals name="Integer"/>
-    <eLiterals name="String"/>
-    <eLiterals name="Boolean"/>
-    <eLiterals name="Double"/>
+    <eLiterals name="String" value="1"/>
+    <eLiterals name="Boolean" value="2"/>
+    <eLiterals name="Double" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionCall">
     <eStructuralFeatures xsi:type="ecore:EReference" name="calledFunction" lowerBound="1"
