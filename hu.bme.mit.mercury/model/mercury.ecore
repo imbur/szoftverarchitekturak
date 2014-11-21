@@ -18,6 +18,8 @@
         eType="#//InputVariable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="outputVariables" upperBound="-1"
         eType="#//OutputVariable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" upperBound="-1"
+        eType="#//FunctionCall" eOpposite="#//FunctionCall/calledFunction"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationUnit" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="programs" upperBound="-1"
@@ -35,7 +37,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionCall">
     <eStructuralFeatures xsi:type="ecore:EReference" name="calledFunction" lowerBound="1"
-        eType="#//FunctionBlock"/>
+        eType="#//FunctionBlock" eOpposite="#//FunctionBlock/calls"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="inputs" upperBound="-1"
         eType="#//FunctionInputVariableReference" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
