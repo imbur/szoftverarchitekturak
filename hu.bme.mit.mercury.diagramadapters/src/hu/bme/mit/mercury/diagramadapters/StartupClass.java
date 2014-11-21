@@ -30,11 +30,10 @@ public class StartupClass implements IStartup {
 							System.out.println("Nagyon jooo!");
 							page.addPartListener(EditorPartListener.getInstance());
 						}
+						
 						IEditorReference[] editorReferences = PlatformUI.getWorkbench().getActiveWorkbenchWindow()
 							    .getActivePage().getEditorReferences();
-							 
 						 for (IEditorReference iEditorReference : editorReferences) {
-							System.out.println(iEditorReference.getPartName());
 							IEditorPart editorPart = iEditorReference.getEditor(true);
 							if (editorPart instanceof DDiagramEditor) {
 								System.out.println("Hello Sirius editor");
