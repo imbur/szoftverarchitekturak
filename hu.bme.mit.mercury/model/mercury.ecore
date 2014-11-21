@@ -43,33 +43,29 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
         eType="#//FunctionOutputVariableReference" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionInputVariableReference">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//FunctionOutputVariableReference"
-        eOpposite="#//FunctionOutputVariableReference/target"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="programSource" eType="#//ProgramInputVariable"
-        eOpposite="#//ProgramInputVariable/target"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionInputVariableReference" eSuperTypes="#//DataSink">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
         eType="#//InputVariable"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionOutputVariableReference">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
-        eType="#//FunctionInputVariableReference" eOpposite="#//FunctionInputVariableReference/source"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="programTarget" upperBound="-1"
-        eType="#//ProgramOutputVariable" eOpposite="#//ProgramOutputVariable/source"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionOutputVariableReference" eSuperTypes="#//DataSource">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
         eType="#//OutputVariable"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProgramInputVariable">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
-        eType="#//FunctionInputVariableReference" eOpposite="#//FunctionInputVariableReference/programSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramInputVariable" eSuperTypes="#//DataSource">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProgramOutputVariable">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
-        eType="#//FunctionOutputVariableReference" eOpposite="#//FunctionOutputVariableReference/programTarget"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramOutputVariable" eSuperTypes="#//DataSink">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSink" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//DataSource"
+        eOpposite="#//DataSource/target"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSource" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
+        eType="#//DataSink" eOpposite="#//DataSink/source"/>
   </eClassifiers>
 </ecore:EPackage>

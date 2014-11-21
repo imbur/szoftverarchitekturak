@@ -38,25 +38,25 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionCall/outputs"/>
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//FunctionInputVariableReference">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionInputVariableReference/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionInputVariableReference/programSource"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionInputVariableReference/variable"/>
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//FunctionOutputVariableReference">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionOutputVariableReference/target"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionOutputVariableReference/programTarget"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//FunctionOutputVariableReference/variable"/>
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//ProgramInputVariable">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//ProgramInputVariable/target"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mercury.ecore#//ProgramInputVariable/type"/>
     </genClasses>
     <genClasses ecoreClass="mercury.ecore#//ProgramOutputVariable">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//ProgramOutputVariable/source"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mercury.ecore#//ProgramOutputVariable/type"/>
     </genClasses>
     <genClasses image="false" ecoreClass="mercury.ecore#//NamedElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mercury.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mercury.ecore#//DataSink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//DataSink/source"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mercury.ecore#//DataSource">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//DataSource/target"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
