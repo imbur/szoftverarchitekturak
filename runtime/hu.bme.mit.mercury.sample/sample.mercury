@@ -5,7 +5,7 @@
     <inputVariables name="IN2" type="Boolean"/>
     <outputVariables name="OUT" type="Boolean"/>
     <functionCalls calledFunction="//@functionBlocks.0">
-      <inputs variable="//@functionBlocks.0/@inputVariables.0" programSource="//@programs.0/@inputs.0"/>
+      <inputs variable="//@functionBlocks.0/@inputVariables.0" programSource="//@programs.0/@inputs.1"/>
       <outputs variable="//@functionBlocks.0/@outputVariables.0" target="//@programs.0/@functionCalls.1/@inputs.1"/>
     </functionCalls>
     <functionCalls calledFunction="//@functionBlocks.1">
@@ -13,7 +13,8 @@
       <inputs variable="//@functionBlocks.1/@inputVariables.1" source="//@programs.0/@functionCalls.0/@outputs.0"/>
       <outputs variable="//@functionBlocks.1/@outputVariables.0" programTarget="//@programs.0/@outputs.0"/>
     </functionCalls>
-    <inputs variable="//@programs.0/@inputVariables.0" target="//@programs.0/@functionCalls.1/@inputs.0 //@programs.0/@functionCalls.0/@inputs.0"/>
+    <inputs variable="//@programs.0/@inputVariables.0" target="//@programs.0/@functionCalls.1/@inputs.0"/>
+    <inputs variable="//@programs.0/@inputVariables.1" target="//@programs.0/@functionCalls.0/@inputs.0"/>
     <outputs variable="//@programs.0/@outputVariables.0" source="//@programs.0/@functionCalls.1/@outputs.0"/>
   </programs>
   <functionBlocks name="AND">

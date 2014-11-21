@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="mercury" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="mercury" version="8.1.0">
   <ownedViewpoints name="AllocationUnit" modelFileExtension="mercury">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="AllocationUnitDiagram" domainClass="mercury.AllocationUnit">
       <metamodel href="http://www.example.org/mercury#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="Parameter" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@subNodeMappings[name='InputVariableReference']" targetFinderExpression="[/]" sourceFinderExpression="[eContainer():FunctionCall/]" domainClass="mercury.OutputVariableReference" useDomainElement="true">
+        <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariableReference']" targetFinderExpression="feature:programTarget">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="DataEnters" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteIncomingConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -12,23 +20,23 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="PassesTo" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@subNodeMappings[name='OutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@subNodeMappings[name='InputVariableReference']" targetFinderExpression="[/]">
+        <edgeMappings name="DataCarry" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
         <containerMappings name="FunctionBlockContainer" domainClass="mercury.FunctionBlock">
-          <subNodeMappings name="Input" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.InputVariable">
+          <subNodeMappings name="InputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.InputVariable">
             <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </subNodeMappings>
-          <subNodeMappings name="Output" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.OutputVariable">
+          <subNodeMappings name="OutputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.OutputVariable">
             <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -43,61 +51,177 @@
           </style>
         </containerMappings>
         <containerMappings name="ProgramContainer" domainClass="mercury.Program">
-          <subNodeMappings name="ProgramInputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.InputVariable">
-            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+          <borderedNodeMappings name="ProgramInputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariableReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
-          </subNodeMappings>
-          <subNodeMappings name="ProgramOutputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.OutputVariable">
-            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+          </borderedNodeMappings>
+          <borderedNodeMappings name="ProgramOutputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramOutputVariableReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
             </style>
-          </subNodeMappings>
-          <subNodeMappings name="ProgramInputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariableReference">
-            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[/]" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-            </style>
-          </subNodeMappings>
+          </borderedNodeMappings>
           <subContainerMappings name="FunctionCallContainer" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.FunctionCall">
-            <subNodeMappings name="InputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.InputVariableReference">
-              <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" labelPosition="node" hideLabelByDefault="true" resizeKind="NSEW">
+            <borderedNodeMappings name="FunctionOutputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.FunctionOutputVariableReference">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" labelAlignment="LEFT" sizeComputationExpression="0" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </borderedNodeMappings>
+            <borderedNodeMappings name="FunctionInputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.FunctionInputVariableReference">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="0" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
               </style>
-            </subNodeMappings>
-            <subNodeMappings name="OutputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.OutputVariableReference">
-              <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
+            </borderedNodeMappings>
             <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[calledFunction.name/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" showIcon="false">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </containerMappings>
-        <toolSections name="FunctionBlockSection">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="FunctionBlockCreation" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']">
+        <toolSections name="Connections">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateConnection" edgeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']">
+            <sourceVariable name="source"/>
+            <targetVariable name="trg"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="[source.eClass().name='ProgramInputVariableReference'/]">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(ProgramInputVariableReference).target->including(trg)/]"/>
+                  </cases>
+                  <cases conditionExpression="[source.eClass().name='FunctionOutputVariableReference'/]">
+                    <subModelOperations xsi:type="tool_1:Switch">
+                      <cases conditionExpression="[trg.eClass().name='ProgramOutputVariableReference'/]">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="programTarget" valueExpression="[self.oclAsType(FunctionOutputVariableReference).programTarget->including(trg)/]"/>
+                      </cases>
+                      <cases conditionExpression="[trg.eClass().name='FunctionInputVariableReference'/]">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(FunctionOutputVariableReference).target->including(trg)/]"/>
+                      </cases>
+                      <default/>
+                    </subModelOperations>
+                  </cases>
+                  <default/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteConnection">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(FunctionOutputVariableReference).target->excluding(self.oclAsType(FunctionOutputVariableReference).target)/]"/>
+                <subModelOperations xsi:type="tool_1:Unset" featureName="programTarget" elementExpression="[self.oclAsType(FunctionOutputVariableReference).programTarget->excluding(self.oclAsType(FunctionOutputVariableReference).programTarget)/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteIncomingConnection">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(ProgramInputVariableReference).target->excluding(self.oclAsType(ProgramInputVariableReference).target)/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="ReconnectConnection">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(FunctionOutputVariableReference).target->including(trg)/]"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Elements">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateCall" label="Call" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
-            <initialOperation/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.FunctionCall" referenceName="functionCalls"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateFunctionBlock" label="FunctionBlock" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.FunctionBlock" referenceName="functionBlocks">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['function' + container.eContents()->size()/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateProgram" label="Program" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.Program" referenceName="programs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['program' + container.eContents()->size()/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InputVariable" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariableReference'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='InputVariable']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="[container.eClass().name='Program'/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramInputVariableReference" referenceName="inputs"/>
+                  </cases>
+                  <cases conditionExpression="[container.eClass().name='FunctionBlock'/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.InputVariable" referenceName="inputVariables"/>
+                  </cases>
+                  <default/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OutputVariable" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariableReference'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='OutputVariable']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="[container.eClass().name='Program'/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramOutputVariableReference" referenceName="outputs"/>
+                  </cases>
+                  <cases conditionExpression="[container.eClass().name='FunctionBlock'/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.OutputVariable" referenceName="outputVariables"/>
+                  </cases>
+                  <default/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
           </ownedTools>
         </toolSections>
       </defaultLayer>
