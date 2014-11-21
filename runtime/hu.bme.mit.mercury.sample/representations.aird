@@ -430,7 +430,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_u-9-O3FzEeSttIqZhh9nhg" name="PROGRAM1">
         <target xmi:type="mercury:Program" href="sample.mercury#//@programs.0"/>
         <semanticElements xmi:type="mercury:Program" href="sample.mercury#//@programs.0"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Cl494HHCEeSoAfqv1RzKTg" outgoingEdges="_VuEBQHHFEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Cl494HHCEeSoAfqv1RzKTg" name="false" outgoingEdges="_VuEBQHHFEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.0"/>
           <semanticElements xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -444,7 +444,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_CmhQAHHCEeSoAfqv1RzKTg" outgoingEdges="_CnT6MHHCEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_CmhQAHHCEeSoAfqv1RzKTg" name="false" outgoingEdges="_CnT6MHHCEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
           <semanticElements xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_Cm0K8HHCEeSoAfqv1RzKTg" showIcon="false">
@@ -455,7 +455,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_HijFIHHCEeSoAfqv1RzKTg" incomingEdges="_Hi64kHHCEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_HijFIHHCEeSoAfqv1RzKTg" name="false" incomingEdges="_Hi64kHHCEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramOutputVariable" href="sample.mercury#//@programs.0/@outputs.0"/>
           <semanticElements xmi:type="mercury:ProgramOutputVariable" href="sample.mercury#//@programs.0/@outputs.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -469,7 +469,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_FAR1UHHFEeSoAfqv1RzKTg" outgoingEdges="_VJNnwHHFEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_FAR1UHHFEeSoAfqv1RzKTg" name="false" outgoingEdges="_VJNnwHHFEeSoAfqv1RzKTg" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
           <semanticElements xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

@@ -52,14 +52,14 @@
         </containerMappings>
         <containerMappings name="ProgramContainer" domainClass="mercury.Program">
           <borderedNodeMappings name="ProgramInputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariable">
-            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
           <borderedNodeMappings name="ProgramOutputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramOutputVariable">
-            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
