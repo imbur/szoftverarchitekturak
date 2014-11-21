@@ -1,7 +1,10 @@
 package hu.bme.mit.mercury.diagramadapters;
 
 import hu.bme.mit.mercury.diagramadapters.listeners.EditorPartListener;
+import hu.bme.mit.mercury.diagramadapters.util.SiriusEditorContentAdapter;
 
+import org.eclipse.sirius.diagram.ui.tools.api.editor.DDiagramEditor;
+import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IEditorReference;
 import org.eclipse.ui.IStartup;
 import org.eclipse.ui.IWorkbench;
@@ -32,6 +35,12 @@ public class StartupClass implements IStartup {
 							 
 						 for (IEditorReference iEditorReference : editorReferences) {
 							System.out.println(iEditorReference.getPartName());
+							IEditorPart editorPart = iEditorReference.getEditor(true);
+							if (editorPart instanceof DDiagramEditor) {
+								System.out.println("Hello Sirius editor");
+								DDiagramEditor siriusEditor = (DDiagramEditor)editorPart;
+								siriusEditor.getEditingDomain().getResourceSet().eAdapters().add(new SiriusEditorContentAdapter());
+							}
 						 }
 					} else {
 						try {

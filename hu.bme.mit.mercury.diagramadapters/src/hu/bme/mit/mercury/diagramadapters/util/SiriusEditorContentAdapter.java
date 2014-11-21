@@ -16,7 +16,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.impl.EReferenceImpl;
 import org.eclipse.emf.ecore.util.EContentAdapter;
-import org.eclipse.ui.handlers.HandlerUtil;
 
 public class SiriusEditorContentAdapter extends EContentAdapter {
 
@@ -29,7 +28,13 @@ public class SiriusEditorContentAdapter extends EContentAdapter {
         	if(ref.getName().equals("calledFunction")){
         	
         		if(notification.getEventType() == Notification.SET){
-					if (notification.getNewValue() instanceof FunctionBlock) {
+        			
+        			if(notification.getNewValue() == null){
+        				FunctionCall functionCall = (FunctionCall)notification.getNotifier();
+    					functionCall.getInputs().clear();
+    					functionCall.getOutputs().clear();
+        			}
+        			else if (notification.getNewValue() instanceof FunctionBlock) {
 						FunctionBlock functionBlock = (FunctionBlock) notification.getNewValue();
 						
 						List<FunctionInputVariableReference> inputReferences = new ArrayList<>();
@@ -54,11 +59,6 @@ public class SiriusEditorContentAdapter extends EContentAdapter {
 						functionCall.getInputs().addAll(inputReferences);
 						functionCall.getOutputs().addAll(outputReferences);
 					}
-        		}
-        		else if(notification.getEventType() == Notification.UNSET){
-        			FunctionCall functionCall = (FunctionCall)notification.getNotifier();
-					functionCall.getInputs().clear();
-					functionCall.getOutputs().clear();
         		}
 				
         	}
