@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mercury:AllocationUnit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mercury="http://www.example.org/mercury">
   <programs name="PROGRAM1">
-    <inputVariables name="IN1" type="Boolean"/>
-    <inputVariables name="IN2" type="Boolean"/>
-    <outputVariables name="OUT" type="Boolean"/>
     <functionCalls calledFunction="//@functionBlocks.0">
-      <inputs variable="//@functionBlocks.0/@inputVariables.0" programSource="//@programs.0/@inputs.1"/>
-      <outputs variable="//@functionBlocks.0/@outputVariables.0" target="//@programs.0/@functionCalls.1/@inputs.1"/>
+      <inputs programSource="//@programs.0/@inputs.1" variable="//@functionBlocks.0/@inputVariables.0"/>
+      <inputs programSource="//@programs.0/@inputs.2" variable="//@functionBlocks.0/@inputVariables.1"/>
+      <outputs target="//@programs.0/@functionCalls.1/@inputs.1" variable="//@functionBlocks.0/@outputVariables.0"/>
     </functionCalls>
-    <functionCalls calledFunction="//@functionBlocks.1">
-      <inputs variable="//@functionBlocks.1/@inputVariables.0" programSource="//@programs.0/@inputs.0"/>
-      <inputs variable="//@functionBlocks.1/@inputVariables.1" source="//@programs.0/@functionCalls.0/@outputs.0"/>
-      <outputs variable="//@functionBlocks.1/@outputVariables.0" programTarget="//@programs.0/@outputs.0"/>
+    <functionCalls calledFunction="//@functionBlocks.0">
+      <inputs programSource="//@programs.0/@inputs.0" variable="//@functionBlocks.1/@inputVariables.0"/>
+      <inputs source="//@programs.0/@functionCalls.0/@outputs.0" variable="//@functionBlocks.1/@inputVariables.1"/>
+      <outputs programTarget="//@programs.0/@outputs.0" variable="//@functionBlocks.1/@outputVariables.0"/>
     </functionCalls>
-    <inputs variable="//@programs.0/@inputVariables.0" target="//@programs.0/@functionCalls.1/@inputs.0"/>
-    <inputs variable="//@programs.0/@inputVariables.1" target="//@programs.0/@functionCalls.0/@inputs.0"/>
-    <outputs variable="//@programs.0/@outputVariables.0" source="//@programs.0/@functionCalls.1/@outputs.0"/>
+    <inputs target="//@programs.0/@functionCalls.1/@inputs.0"/>
+    <inputs target="//@programs.0/@functionCalls.0/@inputs.0"/>
+    <inputs target="//@programs.0/@functionCalls.0/@inputs.1"/>
+    <outputs source="//@programs.0/@functionCalls.1/@outputs.0"/>
   </programs>
   <functionBlocks name="AND">
     <inputVariables name="IN11" type="Boolean"/>
@@ -25,6 +24,7 @@
   <functionBlocks name="OR">
     <inputVariables name="IN21" type="Boolean"/>
     <inputVariables name="IN22" type="Boolean"/>
+    <inputVariables/>
     <outputVariables name="OUT2" type="Boolean"/>
   </functionBlocks>
 </mercury:AllocationUnit>

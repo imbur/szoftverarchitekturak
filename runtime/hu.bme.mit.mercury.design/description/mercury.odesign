@@ -4,7 +4,7 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="AllocationUnitDiagram" domainClass="mercury.AllocationUnit">
       <metamodel href="http://www.example.org/mercury#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariableReference']" targetFinderExpression="feature:programTarget">
+        <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']" targetFinderExpression="feature:programTarget">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
             <centerLabelStyleDescription>
@@ -12,7 +12,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="DataEnters" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteIncomingConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
+        <edgeMappings name="DataEnters" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteIncomingConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -51,14 +51,14 @@
           </style>
         </containerMappings>
         <containerMappings name="ProgramContainer" domainClass="mercury.Program">
-          <borderedNodeMappings name="ProgramInputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariableReference">
+          <borderedNodeMappings name="ProgramInputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariable">
             <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
-          <borderedNodeMappings name="ProgramOutputVariableReference" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramOutputVariableReference">
+          <borderedNodeMappings name="ProgramOutputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramOutputVariable">
             <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[thisEObject.variable.name/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -94,8 +94,8 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </containerMappings>
-        <toolSections name="Connections">
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateConnection" edgeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']">
+        <toolSections name="Communication">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateConnection" label="Pass value" edgeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']">
             <sourceVariable name="source"/>
             <targetVariable name="trg"/>
             <sourceViewVariable name="sourceView"/>
@@ -103,12 +103,12 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:Switch">
-                  <cases conditionExpression="[source.eClass().name='ProgramInputVariableReference'/]">
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(ProgramInputVariableReference).target->including(trg)/]"/>
+                  <cases conditionExpression="[source.eClass().name='ProgramInputVariable'/]">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(ProgramInputVariable).target->including(trg)/]"/>
                   </cases>
                   <cases conditionExpression="[source.eClass().name='FunctionOutputVariableReference'/]">
                     <subModelOperations xsi:type="tool_1:Switch">
-                      <cases conditionExpression="[trg.eClass().name='ProgramOutputVariableReference'/]">
+                      <cases conditionExpression="[trg.eClass().name='ProgramOutputVariable'/]">
                         <subModelOperations xsi:type="tool_1:SetValue" featureName="programTarget" valueExpression="[self.oclAsType(FunctionOutputVariableReference).programTarget->including(trg)/]"/>
                       </cases>
                       <cases conditionExpression="[trg.eClass().name='FunctionInputVariableReference'/]">
@@ -139,7 +139,7 @@
             <containerView name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(ProgramInputVariableReference).target->excluding(self.oclAsType(ProgramInputVariableReference).target)/]"/>
+                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(ProgramInputVariable).target->excluding(self.oclAsType(ProgramInputVariable).target)/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -157,46 +157,26 @@
             <edgeView name="edgeView"/>
           </ownedTools>
         </toolSections>
-        <toolSections name="Elements">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateCall" label="Call" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.FunctionCall" referenceName="functionCalls"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateFunctionBlock" label="FunctionBlock" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']">
+        <toolSections name="Declarations">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateFunctionBlock" label="Function Block" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.FunctionBlock" referenceName="functionBlocks">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['function' + container.eContents()->size()/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['function' + container.eContents()->filter(FunctionBlock)->size()/]"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateProgram" label="Program" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.Program" referenceName="programs">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['program' + container.eContents()->size()/]"/>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="InputVariable" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariableReference'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='InputVariable']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InputVariable" label="Input" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='InputVariable']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
                 <subModelOperations xsi:type="tool_1:Switch">
                   <cases conditionExpression="[container.eClass().name='Program'/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramInputVariableReference" referenceName="inputs"/>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramInputVariable" referenceName="inputs"/>
                   </cases>
                   <cases conditionExpression="[container.eClass().name='FunctionBlock'/]">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.InputVariable" referenceName="inputVariables"/>
@@ -206,20 +186,42 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="OutputVariable" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariableReference'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='OutputVariable']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OutputVariable" label="Output" nodeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='OutputVariable']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:Switch">
                   <cases conditionExpression="[container.eClass().name='Program'/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramOutputVariableReference" referenceName="outputs"/>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.ProgramOutputVariable" referenceName="outputs"/>
                   </cases>
                   <cases conditionExpression="[container.eClass().name='FunctionBlock'/]">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.OutputVariable" referenceName="outputVariables"/>
                   </cases>
                   <default/>
                 </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Program and Structure">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateProgram" label="Program" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.Program" referenceName="programs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['program' + container.eContents()->filter(Program)->size()/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateCall" label="Function Call" containerMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mercury.FunctionCall" referenceName="functionCalls"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
