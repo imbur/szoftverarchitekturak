@@ -4,15 +4,15 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="AllocationUnitDiagram" domainClass="mercury.AllocationUnit">
       <metamodel href="http://www.example.org/mercury#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']" targetFinderExpression="feature:programTarget">
+        <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="DataEnters" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteIncomingConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
+        <edgeMappings name="DataEnters" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -22,7 +22,7 @@
         </edgeMappings>
         <edgeMappings name="DataCarry" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
             <centerLabelStyleDescription>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
@@ -52,14 +52,14 @@
         </containerMappings>
         <containerMappings name="ProgramContainer" domainClass="mercury.Program">
           <borderedNodeMappings name="ProgramInputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramInputVariable">
-            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[/]" sizeComputationExpression="2" resizeKind="NSEW">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[''/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
           <borderedNodeMappings name="ProgramOutputVariable" semanticCandidatesExpression="feature:eAllContents" domainClass="mercury.ProgramOutputVariable">
-            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[/]" sizeComputationExpression="2" resizeKind="NSEW">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[''/]" sizeComputationExpression="2" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
@@ -97,49 +97,12 @@
         <toolSections name="Communication">
           <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateConnection" label="Pass value" edgeMappings="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']">
             <sourceVariable name="source"/>
-            <targetVariable name="trg"/>
+            <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool_1:Switch">
-                  <cases conditionExpression="[source.eClass().name='ProgramInputVariable'/]">
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(ProgramInputVariable).target->including(trg)/]"/>
-                  </cases>
-                  <cases conditionExpression="[source.eClass().name='FunctionOutputVariableReference'/]">
-                    <subModelOperations xsi:type="tool_1:Switch">
-                      <cases conditionExpression="[trg.eClass().name='ProgramOutputVariable'/]">
-                        <subModelOperations xsi:type="tool_1:SetValue" featureName="programTarget" valueExpression="[self.oclAsType(FunctionOutputVariableReference).programTarget->including(trg)/]"/>
-                      </cases>
-                      <cases conditionExpression="[trg.eClass().name='FunctionInputVariableReference'/]">
-                        <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(FunctionOutputVariableReference).target->including(trg)/]"/>
-                      </cases>
-                      <default/>
-                    </subModelOperations>
-                  </cases>
-                  <default/>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteConnection">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <containerView name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(FunctionOutputVariableReference).target->excluding(self.oclAsType(FunctionOutputVariableReference).target)/]"/>
-                <subModelOperations xsi:type="tool_1:Unset" featureName="programTarget" elementExpression="[self.oclAsType(FunctionOutputVariableReference).programTarget->excluding(self.oclAsType(FunctionOutputVariableReference).programTarget)/]"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteIncomingConnection">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <containerView name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(ProgramInputVariable).target->excluding(self.oclAsType(ProgramInputVariable).target)/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(DataSource).target->including(target)/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -151,10 +114,20 @@
             <element name="element"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(FunctionOutputVariableReference).target->including(trg)/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="[self.oclAsType(DataSource).target->including(target)/]"/>
               </firstModelOperations>
             </initialOperation>
             <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteConnection">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="target" elementExpression="[self.oclAsType(DataSource).target->excluding(self.oclAsType(DataSource).target)/]"/>
+              </firstModelOperations>
+            </initialOperation>
           </ownedTools>
         </toolSections>
         <toolSections name="Declarations">
