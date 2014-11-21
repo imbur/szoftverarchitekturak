@@ -14,6 +14,7 @@ import mercury.OutputVariable;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EReferenceImpl;
 import org.eclipse.emf.ecore.util.EContentAdapter;
 
@@ -63,6 +64,86 @@ public class SiriusEditorContentAdapter extends EContentAdapter {
 				
         	}
         }
+        
+        if(notification.getNewValue() instanceof InputVariable && notification.getNotifier() instanceof FunctionBlock && notification.getFeature() instanceof EReference){
+        	EReference ref = (EReference)notification.getFeature();
+        	InputVariable inputVariabe = (InputVariable)notification.getNewValue();
+        	if(ref.getName().equals("inputVariables")){
+        		FunctionBlock functionBlock = (FunctionBlock)notification.getNotifier();
+        		
+        		EList<FunctionCall> calls = functionBlock.getCalls();
+        		for (FunctionCall functionCall : calls) {
+        			FunctionInputVariableReference functionInputVariableReference = MercuryFactory.eINSTANCE.createFunctionInputVariableReference();
+            		functionInputVariableReference.setVariable(inputVariabe);
+					functionCall.getInputs().add(functionInputVariableReference);
+				}
+        	}
+        	
+        }
+        
+        if(notification.getNewValue() instanceof OutputVariable && notification.getNotifier() instanceof FunctionBlock && notification.getFeature() instanceof EReference){
+        	EReference ref = (EReference)notification.getFeature();
+        	OutputVariable outputVariable = (OutputVariable)notification.getNewValue();
+        	if(ref.getName().equals("outputVariables")){
+        		FunctionBlock functionBlock = (FunctionBlock)notification.getNotifier();
+        		
+        		EList<FunctionCall> calls = functionBlock.getCalls();
+        		for (FunctionCall functionCall : calls) {
+        			FunctionOutputVariableReference functionOutputVariableReference = MercuryFactory.eINSTANCE.createFunctionOutputVariableReference();
+            		functionOutputVariableReference.setVariable(outputVariable);
+					functionCall.getOutputs().add(functionOutputVariableReference);
+				}
+        	}
+        }
+        
+        if(notification.getOldValue() instanceof InputVariable && notification.getNotifier() instanceof FunctionBlock && notification.getFeature() instanceof EReference){
+        	EReference ref = (EReference)notification.getFeature();
+        	if(ref.getName().equals("inputVariables")){
+        		FunctionBlock functionBlock = (FunctionBlock)notification.getNotifier();
+        		
+        		EList<FunctionCall> calls = functionBlock.getCalls();
+        		for (FunctionCall functionCall : calls) {
+        			FunctionInputVariableReference refToDelete = null;
+        			EList<FunctionInputVariableReference> inputs = functionCall.getInputs();
+        			for (FunctionInputVariableReference functionInputVariableReference : inputs) {
+						if(functionInputVariableReference.getVariable() == null){
+							refToDelete = functionInputVariableReference;
+						}
+					}
+        			inputs.remove(refToDelete);
+				}
+        	}
+        	
+        	System.out.println(notification.getOldValue());
+        	System.out.println(notification.getNotifier());
+        	System.out.println(notification.getFeature());
+        	System.out.println();
+        }
+        
+        if(notification.getOldValue() instanceof OutputVariable && notification.getNotifier() instanceof FunctionBlock && notification.getFeature() instanceof EReference){
+        	EReference ref = (EReference)notification.getFeature();
+        	if(ref.getName().equals("outputVariables")){
+        		FunctionBlock functionBlock = (FunctionBlock)notification.getNotifier();
+        		
+        		EList<FunctionCall> calls = functionBlock.getCalls();
+        		for (FunctionCall functionCall : calls) {
+        			FunctionOutputVariableReference refToDelete = null;
+        			EList<FunctionOutputVariableReference> outputs = functionCall.getOutputs();
+        			for (FunctionOutputVariableReference functionOutputVariableReference : outputs) {
+						if(functionOutputVariableReference.getVariable() == null){
+							refToDelete = functionOutputVariableReference;
+						}
+					}
+        			outputs.remove(refToDelete);
+				}
+        	}
+        	
+        	System.out.println(notification.getOldValue());
+        	System.out.println(notification.getNotifier());
+        	System.out.println(notification.getFeature());
+        	System.out.println();
+        }
+        
       }
 	
 }
