@@ -11,6 +11,9 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.navigator.resources,
  org.eclipse.core.filesystem,
  org.eclipse.ui.ide,
- org.eclipse.core.resources
+ org.eclipse.core.resources,
+ hu.bme.mit.mercury;bundle-version="0.1.0",
+ hu.bme.mit.mercury.edit;bundle-version="1.0.0",
+ hu.bme.mit.mercury.editor;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
