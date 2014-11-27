@@ -1,4 +1,4 @@
-package hu.bme.mit.mercury.rcp;
+package hu.bme.mit.mercury.rcp.handlers;
 
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
