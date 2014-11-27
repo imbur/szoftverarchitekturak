@@ -1,6 +1,9 @@
 package hu.bme.mit.mercury.rcp;
 
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.ui.IWorkbenchPage;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -22,6 +25,12 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setInitialSize(new Point(400, 300));
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(false);
-		configurer.setTitle("RCP Application");
+		configurer.setTitle("RCP Mercury modeler");
 	}
+	
+
+    @Override
+    public void postWindowOpen() {
+        super.postWindowOpen();
+    }
 }

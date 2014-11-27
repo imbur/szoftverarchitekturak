@@ -1,5 +1,8 @@
 package hu.bme.mit.mercury.rcp;
 
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.actions.ActionFactory;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 
@@ -18,5 +21,21 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 	public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
 		super(configurer);
 	}
+	
+    @Override
+    protected void makeActions(IWorkbenchWindow window) {
+    	register(ActionFactory.UNDO.create(window));
+    	register(ActionFactory.REDO.create(window));
+        register(ActionFactory.COPY.create(window));
+        register(ActionFactory.DELETE.create(window));
+        register(ActionFactory.FIND.create(window));
+        register(ActionFactory.CUT.create(window));
+        register(ActionFactory.PASTE.create(window));
+    }
+
+    @Override
+    protected void fillMenuBar(IMenuManager menuBar) {
+    }
+
 
 }
