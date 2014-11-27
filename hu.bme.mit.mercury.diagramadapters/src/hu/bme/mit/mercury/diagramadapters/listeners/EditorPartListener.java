@@ -1,7 +1,9 @@
 package hu.bme.mit.mercury.diagramadapters.listeners;
 
+import hu.bme.mit.mercury.diagramadapters.util.ResourceSetRegistry;
 import hu.bme.mit.mercury.diagramadapters.util.SiriusEditorContentAdapter;
 
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.sirius.diagram.ui.tools.api.editor.DDiagramEditor;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IPartListener;
@@ -33,7 +35,17 @@ public class EditorPartListener implements IPartListener {
 
 	@Override
 	public void partClosed(IWorkbenchPart part) {
-		// TODO Auto-generated method stub
+		
+//		if (part instanceof IEditorPart) {
+//			IEditorPart editorPart = (IEditorPart) part;
+//			
+//			if (editorPart instanceof DDiagramEditor) {
+//				System.out.println("Bye Sirius editor");
+//				
+//				DDiagramEditor siriusEditor = (DDiagramEditor)editorPart;
+//				siriusEditor.getEditingDomain().getResourceSet().eAdapters().clear();
+//			}
+//		}
 
 	}
 
@@ -50,10 +62,14 @@ public class EditorPartListener implements IPartListener {
 			IEditorPart editorPart = (IEditorPart) part;
 			
 			if (editorPart instanceof DDiagramEditor) {
-				System.out.println("Hello Sirius editor");
-				
 				DDiagramEditor siriusEditor = (DDiagramEditor)editorPart;
-				siriusEditor.getEditingDomain().getResourceSet().eAdapters().add(new SiriusEditorContentAdapter());
+				ResourceSet resourceSet = siriusEditor.getEditingDomain().getResourceSet();
+				
+				if(ResourceSetRegistry.register(resourceSet)){
+					System.out.println("Hello Sirius editor");
+					siriusEditor.getEditingDomain().getResourceSet().eAdapters().add(new SiriusEditorContentAdapter());
+				}
+				
 			}
 		}
 
