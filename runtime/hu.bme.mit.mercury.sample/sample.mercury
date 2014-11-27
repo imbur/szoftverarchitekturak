@@ -29,7 +29,7 @@
     <outputs source="//@programs.0/@functionCalls.3/@outputs.0"/>
     <outputs source="//@programs.0/@functionCalls.1/@outputs.0"/>
   </programs>
-  <functionBlocks name="AND" calls="//@programs.0/@functionCalls.3">
+  <functionBlocks name="AND" calls="//@programs.0/@functionCalls.3 //@functionBlocks.2/@functionCalls.0">
     <inputVariables name="IN11" type="Boolean"/>
     <inputVariables name="IN22" type="Boolean"/>
     <outputVariables name="OUT1" type="Boolean"/>
@@ -40,6 +40,11 @@
     <outputVariables name="OUT2" type="Boolean"/>
   </functionBlocks>
   <functionBlocks name="Complex_gate" calls="//@programs.0/@functionCalls.1">
+    <functionCalls calledFunction="//@functionBlocks.0">
+      <inputs variable="//@functionBlocks.0/@inputVariables.0"/>
+      <inputs variable="//@functionBlocks.0/@inputVariables.1"/>
+      <outputs variable="//@functionBlocks.0/@outputVariables.0"/>
+    </functionCalls>
     <inputVariables name="IN31" type="Boolean"/>
     <inputVariables name="IN32" type="Boolean"/>
     <inputVariables name="IN33" type="Boolean"/>

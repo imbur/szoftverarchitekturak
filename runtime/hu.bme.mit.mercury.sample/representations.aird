@@ -45,7 +45,7 @@
               <styles xmi:type="notation:FilteringStyle" xmi:id="_Cu6xgnHXEeStNq1CDH4zxA"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_Cu4VQXHXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cu4VQnHXEeStNq1CDH4zxA" x="132" y="60"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cu4VQnHXEeStNq1CDH4zxA" x="84" y="84"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_HSK6QHHXEeStNq1CDH4zxA" type="2002" element="_HSGo0HHXEeStNq1CDH4zxA">
             <children xmi:type="notation:Node" xmi:id="_HSK6Q3HXEeStNq1CDH4zxA" type="5006"/>
@@ -87,7 +87,7 @@
               <styles xmi:type="notation:FilteringStyle" xmi:id="_HSK6RnHXEeStNq1CDH4zxA"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_HSK6QXHXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HSK6QnHXEeStNq1CDH4zxA" x="324" y="60"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HSK6QnHXEeStNq1CDH4zxA" x="240" y="84"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IjibgHHXEeStNq1CDH4zxA" type="2002" element="_IjfYMHHXEeStNq1CDH4zxA">
             <children xmi:type="notation:Node" xmi:id="_Ijibg3HXEeStNq1CDH4zxA" type="5006"/>
@@ -101,7 +101,7 @@
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UGNNcnHXEeStNq1CDH4zxA"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_UGL_UXHXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UGL_UnHXEeStNq1CDH4zxA" x="115" y="54" width="30" height="30"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UGL_UnHXEeStNq1CDH4zxA" x="271" y="66" width="30" height="30"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_WG7IAHHXEeStNq1CDH4zxA" type="3007" element="_WG0aUHHXEeStNq1CDH4zxA">
                 <children xmi:type="notation:Node" xmi:id="_WG7vEHHXEeStNq1CDH4zxA" type="5003">
@@ -147,11 +147,53 @@
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_ZUTC8XHXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZUTC8nHXEeStNq1CDH4zxA" x="43" y="42" width="30" height="30"/>
               </children>
+              <children xmi:type="notation:Node" xmi:id="_8tP64HZ0EeSbB4XhgSujIw" type="3008" element="_8smaoHZ0EeSbB4XhgSujIw">
+                <children xmi:type="notation:Node" xmi:id="_8tRJAHZ0EeSbB4XhgSujIw" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_8tRwEHZ0EeSbB4XhgSujIw" type="7002">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_8tRwEXZ0EeSbB4XhgSujIw"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_8tRwEnZ0EeSbB4XhgSujIw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_Bcn0EHZ1EeSbB4XhgSujIw" type="3012" element="_BcU5IHZ1EeSbB4XhgSujIw">
+                  <children xmi:type="notation:Node" xmi:id="_Bcn0E3Z1EeSbB4XhgSujIw" type="5010">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_Bcn0FHZ1EeSbB4XhgSujIw" x="-25" y="1"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_BcpCNXZ1EeSbB4XhgSujIw" type="3003" element="_BcU5IXZ1EeSbB4XhgSujIw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_BcpCNnZ1EeSbB4XhgSujIw" fontName="Ubuntu"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BcpCN3Z1EeSbB4XhgSujIw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_Bcn0EXZ1EeSbB4XhgSujIw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bcn0EnZ1EeSbB4XhgSujIw" x="8" width="0" height="0"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_BcobIHZ1EeSbB4XhgSujIw" type="3012" element="_BcVgMHZ1EeSbB4XhgSujIw">
+                  <children xmi:type="notation:Node" xmi:id="_BcobI3Z1EeSbB4XhgSujIw" type="5010">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_BcobJHZ1EeSbB4XhgSujIw" x="-25" y="1"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_BcppQHZ1EeSbB4XhgSujIw" type="3003" element="_BcWHQHZ1EeSbB4XhgSujIw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_BcppQXZ1EeSbB4XhgSujIw" fontName="Ubuntu"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BcppQnZ1EeSbB4XhgSujIw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_BcobIXZ1EeSbB4XhgSujIw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BcobInZ1EeSbB4XhgSujIw" x="8" width="0" height="0"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_BcpCMHZ1EeSbB4XhgSujIw" type="3012" element="_BcWHRHZ1EeSbB4XhgSujIw">
+                  <children xmi:type="notation:Node" xmi:id="_BcpCM3Z1EeSbB4XhgSujIw" type="5010">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_BcpCNHZ1EeSbB4XhgSujIw" x="-25" y="1"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_BcppQ3Z1EeSbB4XhgSujIw" type="3003" element="_BcWuUHZ1EeSbB4XhgSujIw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_BcppRHZ1EeSbB4XhgSujIw" fontName="Ubuntu"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BcppRXZ1EeSbB4XhgSujIw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_BcpCMXZ1EeSbB4XhgSujIw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BcpCMnZ1EeSbB4XhgSujIw" x="8" width="0" height="0"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_8tP64XZ0EeSbB4XhgSujIw" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8tP64nZ0EeSbB4XhgSujIw" x="103" y="42"/>
+              </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_IjibhXHXEeStNq1CDH4zxA"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_IjibhnHXEeStNq1CDH4zxA"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IjibgXHXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IjibgnHXEeStNq1CDH4zxA" x="516" y="36"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IjibgnHXEeStNq1CDH4zxA" x="396" y="48" width="315" height="135"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kFetkHHXEeStNq1CDH4zxA" type="2002" element="_kFbDMHHXEeStNq1CDH4zxA">
             <children xmi:type="notation:Node" xmi:id="_kFetk3HXEeStNq1CDH4zxA" type="5006"/>
@@ -784,6 +826,54 @@
             <color xmi:type="viewpoint:RGBValues" xmi:id="_ZUOxhHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subNodeMappings[name='InputVariable']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_8smaoHZ0EeSbB4XhgSujIw" name="AND">
+          <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@functionBlocks.2/@functionCalls.0"/>
+          <semanticElements xmi:type="mercury:FunctionCall" href="sample.mercury#//@functionBlocks.2/@functionCalls.0"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_BcU5IHZ1EeSbB4XhgSujIw" name="OUT1" width="0" height="0" resizeKind="NSEW">
+            <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@outputs.0"/>
+            <semanticElements xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@outputs.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_BcU5IXZ1EeSbB4XhgSujIw" showIcon="false" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_BcU5InZ1EeSbB4XhgSujIw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_BcU5I3Z1EeSbB4XhgSujIw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_BcU5JHZ1EeSbB4XhgSujIw" red="39" green="76" blue="114"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
+          </ownedBorderedNodes>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_BcVgMHZ1EeSbB4XhgSujIw" name="IN11" width="0" height="0" resizeKind="NSEW">
+            <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.0"/>
+            <semanticElements xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_BcWHQHZ1EeSbB4XhgSujIw" showIcon="false">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_BcWHQXZ1EeSbB4XhgSujIw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_BcWHQnZ1EeSbB4XhgSujIw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_BcWHQ3Z1EeSbB4XhgSujIw" red="239" green="41" blue="41"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+          </ownedBorderedNodes>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_BcWHRHZ1EeSbB4XhgSujIw" name="IN22" width="0" height="0" resizeKind="NSEW">
+            <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.1"/>
+            <semanticElements xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.1"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_BcWuUHZ1EeSbB4XhgSujIw" showIcon="false">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_BcWuUXZ1EeSbB4XhgSujIw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_BcWuUnZ1EeSbB4XhgSujIw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_BcWuU3Z1EeSbB4XhgSujIw" red="239" green="41" blue="41"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_8stIUHZ0EeSbB4XhgSujIw" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIUXZ0EeSbB4XhgSujIw"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIUnZ0EeSbB4XhgSujIw"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIU3Z0EeSbB4XhgSujIw" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIVHZ0EeSbB4XhgSujIw" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kFbDMHHXEeStNq1CDH4zxA" name="MyLogic">

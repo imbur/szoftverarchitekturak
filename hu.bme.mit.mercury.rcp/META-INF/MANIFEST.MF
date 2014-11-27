@@ -13,6 +13,10 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide,
  org.eclipse.core.resources,
  org.eclipse.e4.ui.services,
- org.eclipse.e4.ui.workbench.addons.swt;bundle-version="1.0.0"
+ org.eclipse.e4.ui.workbench.addons.swt;bundle-version="1.0.0",
+ org.eclipse.core.resources,
+ hu.bme.mit.mercury;bundle-version="0.1.0",
+ hu.bme.mit.mercury.edit;bundle-version="1.0.0",
+ hu.bme.mit.mercury.editor;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
