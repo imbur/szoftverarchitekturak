@@ -2,8 +2,8 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mercury" nsURI="http://www.example.org/mercury" nsPrefix="mercury">
   <eClassifiers xsi:type="ecore:EClass" name="OrganizationUnit" abstract="true" eSuperTypes="#//NamedElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="functionCalls" lowerBound="1"
-        upperBound="-1" eType="#//FunctionCall" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionCalls" upperBound="-1"
+        eType="#//FunctionCall" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//VariableType"/>
