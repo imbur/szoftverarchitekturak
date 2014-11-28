@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Aux
+Bundle-SymbolicName: hu.bme.mit.mercury.editor.aux
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: hu.bme.mit.mercury.editor.aux.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ hu.bme.mit.mercury.incquery;bundle-version="0.0.1",
+ org.eclipse.incquery.runtime,
+ hu.bme.mit.mercury;bundle-version="0.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

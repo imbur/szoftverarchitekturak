@@ -1,0 +1,13 @@
+package hu.bme.mit.mercury.incquery
+
+import "http://www.example.org/mercury"
+
+pattern myRule(ou : OrganizationUnit) {
+	OrganizationUnit.functionCalls(ou,_);
+}
+
+
+@Constraint(location = ou, severity = "error", message = "Invalid model element")
+pattern mySecondRule(ou : OrganizationUnit) {
+	OrganizationUnit.functionCalls(ou,_);
+}
