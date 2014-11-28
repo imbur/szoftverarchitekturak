@@ -20,3 +20,44 @@ pattern warnUncalledFunctionBlock(fb: FunctionBlock){
 pattern uncalledFunctionBlock(fb: FunctionBlock){
 	FunctionBlock.calls(fb,_);
 }
+
+
+@Constraint(location = fivr, severity = "error", message = "Wrong typed function block input variable is referenced")
+pattern badFunctionBlockInputType(fivr : FunctionInputVariableReference) {
+	InputVariable.type(iv, t1);
+	InputVariable.target(iv, fivr);
+	FunctionInputVariableReference.variable.type(fivr,t2);
+	t1 != t2;
+}
+
+@Constraint(location = ov, severity = "error", message = "Wrong typed function block output variable is referenced")
+pattern badFunctionBlockOutputType(ov : OutputVariable) {
+	OutputVariable.type(ov, t1);
+	OutputVariable.source(ov, fovr);
+	FunctionOutputVariableReference.variable.type(fovr,t2);
+	t1 != t2;
+}
+
+@Constraint(location = fivr, severity = "error", message = "Wrong typed program input variable is referenced")
+pattern badProgramInputType(fivr : FunctionInputVariableReference) {
+	ProgramInputVariable.type(piv, t1);
+	ProgramInputVariable.target(piv, fivr);
+	FunctionInputVariableReference.variable.type(fivr,t2);
+	t1 != t2;
+}
+
+@Constraint(location = pov, severity = "error", message = "Wrong typed program output variable is referenced")
+pattern badProgramOutputType(pov : ProgramOutputVariable) {
+	ProgramOutputVariable.type(pov, t1);
+	ProgramOutputVariable.source(pov, fovr);
+	FunctionOutputVariableReference.variable.type(fovr,t2);
+	t1 != t2;
+}
+
+@Constraint(location = fivr, severity = "error", message = "Wrong typed FunctionOutputVariableReference is referenced")
+pattern badFunctionInputReferenceType(fivr : FunctionInputVariableReference) {
+	FunctionInputVariableReference.variable.type(fivr, t1);
+	FunctionInputVariableReference.source(fivr, fovr);
+	FunctionOutputVariableReference.variable.type(fovr,t2);
+	t1 != t2;
+}
