@@ -61,3 +61,63 @@ pattern badFunctionInputReferenceType(fivr : FunctionInputVariableReference) {
 	FunctionOutputVariableReference.variable.type(fovr,t2);
 	t1 != t2;
 }
+
+@Constraint(location = p, severity = "error", message = "Name of the Programs in one AllocationUnit should be unique")
+pattern nonUniqueProgramName(p : Program) {
+	AllocationUnit.programs(a,p);
+	AllocationUnit.programs(a,p1);
+	Program.name(p, n);
+	Program.name(p1, n);
+	p != p1;
+}
+
+@Constraint(location = fb, severity = "error", message = "Name of the FunctionBlocks in one AllocationUnit should be unique")
+pattern nonUniqueFunctionBlockName (fb : FunctionBlock) {
+	AllocationUnit.functionBlocks(a,fb);
+	AllocationUnit.functionBlocks(a,fb1);
+	FunctionBlock.name(fb, n);
+	FunctionBlock.name(fb1, n);
+	fb != fb1;
+}
+
+@Constraint(location = iv, severity = "error", message = "InputVariables of a FunctionBlocks should have unique names")
+pattern functionBlockInputVariableNameIsNotUnique (iv : InputVariable) 
+{
+FunctionBlock.inputVariables(fb, iv);
+InputVariable.name(iv, n);
+
+FunctionBlock.inputVariables(fb, iv1);
+InputVariable.name(iv1, n);
+
+iv != iv1;
+
+} or {
+
+FunctionBlock.inputVariables(fb, iv);
+InputVariable.name(iv, n);
+
+FunctionBlock.outputVariables(fb, ov);
+OutputVariable.name(ov, n);
+
+}
+
+@Constraint(location = ov, severity = "error", message = "OutputVariables of a FunctionBlocks should have unique names")
+pattern functionBlockOutputVariableNameIsNotUnique (ov : OutputVariable) 
+{
+FunctionBlock.outputVariables(fb, ov);
+OutputVariable.name(ov, n);
+
+FunctionBlock.outputVariables(fb, ov1);
+OutputVariable.name(ov1, n);
+
+ov != ov1;
+
+} or {
+
+FunctionBlock.outputVariables(fb, ov);
+OutputVariable.name(ov, n);
+
+FunctionBlock.inputVariables(fb, iv);
+InputVariable.name(iv, n);
+
+}
