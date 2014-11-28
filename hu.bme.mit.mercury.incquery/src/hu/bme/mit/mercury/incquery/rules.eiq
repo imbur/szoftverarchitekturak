@@ -2,12 +2,21 @@ package hu.bme.mit.mercury.incquery
 
 import "http://www.example.org/mercury"
 
-pattern myRule(ou : OrganizationUnit) {
-	OrganizationUnit.functionCalls(ou,_);
+
+@Constraint(location = ds, severity = "error", message = "Orphan datasinks are not allowed")
+pattern noOrphanDataSink(ds : DataSink) {
+	0 == count find orphanDataSink(ds);
 }
 
+pattern orphanDataSink(ds : DataSink) {
+	DataSink.source(ds,_);
+}
 
-@Constraint(location = ou, severity = "error", message = "Invalid model element")
-pattern mySecondRule(ou : OrganizationUnit) {
-	OrganizationUnit.functionCalls(ou,_);
+@Constraint(location = fb, severity = "warning", message = "Function block is never used")
+pattern warnUncalledFunctionBlock(fb: FunctionBlock){
+	0 == count find uncalledFunctionBlock(fb);
+}
+
+pattern uncalledFunctionBlock(fb: FunctionBlock){
+	FunctionBlock.calls(fb,_);
 }
