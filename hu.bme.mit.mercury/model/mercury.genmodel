@@ -59,5 +59,8 @@
     <genClasses image="false" ecoreClass="mercury.ecore#//DataSource">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mercury.ecore#//DataSource/target"/>
     </genClasses>
+    <genClasses ecoreClass="mercury.ecore#//Root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mercury.ecore#//Root/allocations"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -69,4 +69,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
         eType="#//DataSink" eOpposite="#//DataSink/source"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocations" lowerBound="1"
+        upperBound="-1" eType="#//AllocationUnit" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>
