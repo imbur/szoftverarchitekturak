@@ -121,3 +121,16 @@ FunctionBlock.inputVariables(fb, iv);
 InputVariable.name(iv, n);
 
 }
+
+@Constraint(location = p, severity = "warning", message = "Useless Program definition. Program does not contain any function calls.")
+pattern programWithoutFunctionCall (p : Program) {
+	neg find programWithZeroFunctionCalls(p);
+}
+
+pattern programWithZeroFunctionCalls (p : Program) {
+	0 == count find programFunctionCalls(p);
+}
+
+pattern programFunctionCalls (p : Program){
+	Program.functionCalls(p,_);
+}
