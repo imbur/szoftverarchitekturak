@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:mercury="http://www.example.org/mercury" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_a-Jj0HFiEeSFFcBakXK_Cg" selectedViews="_9Prd4HFjEeSFFcBakXK_Cg" version="8.1.1">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mercury="http://www.example.org/mercury" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_a-Jj0HFiEeSFFcBakXK_Cg" selectedViews="_9Prd4HFjEeSFFcBakXK_Cg" version="8.1.1">
   <models xmi:type="mercury:AllocationUnit" href="sample.mercury#/"/>
+  <models xmi:type="description:Group" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#/"/>
+  <models xmi:type="description:Environment" href="environment:/viewpoint#/"/>
+  <models xmi:type="ecore:EPackage" href="http://www.example.org/mercury#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_9Prd4HFjEeSFFcBakXK_Cg" initialized="true">
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_BhswcHHXEeStNq1CDH4zxA" name="CurrentAllocation">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Bht-kHHXEeStNq1CDH4zxA" source="GMF_DIAGRAMS">
@@ -647,21 +650,6 @@
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5A6xQ3avEeSzs5ZTobn7BA" points="[15, 12, -91, -73]$[106, 85, 0, 0]"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5A7YUHavEeSzs5ZTobn7BA" id="(0.5,0.0)"/>
           </edges>
-          <edges xmi:type="notation:Edge" xmi:id="_6OvPQHavEeSzs5ZTobn7BA" type="4001" element="_6Oia8HavEeSzs5ZTobn7BA" source="_LaXciHaqEeSzs5ZTobn7BA" target="_w0lB8navEeSzs5ZTobn7BA">
-            <children xmi:type="notation:Node" xmi:id="_6OvPRHavEeSzs5ZTobn7BA" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6OvPRXavEeSzs5ZTobn7BA" y="-10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_6OvPRnavEeSzs5ZTobn7BA" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6OvPR3avEeSzs5ZTobn7BA" y="10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_6OvPSHavEeSzs5ZTobn7BA" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6OvPSXavEeSzs5ZTobn7BA" y="10"/>
-            </children>
-            <styles xmi:type="notation:ConnectorStyle" xmi:id="_6OvPQXavEeSzs5ZTobn7BA"/>
-            <styles xmi:type="notation:FontStyle" xmi:id="_6OvPQnavEeSzs5ZTobn7BA" fontName="Ubuntu" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6OvPQ3avEeSzs5ZTobn7BA" points="[15, 3, -282, -68]$[296, 69, -1, -2]"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6OvPSnavEeSzs5ZTobn7BA" id="(0.4,0.2)"/>
-          </edges>
           <edges xmi:type="notation:Edge" xmi:id="_FDRI0HawEeSzs5ZTobn7BA" type="4001" element="_FDHX0HawEeSzs5ZTobn7BA" source="_w0jz0HavEeSzs5ZTobn7BA" target="_V2FYCHarEeSzs5ZTobn7BA">
             <children xmi:type="notation:Node" xmi:id="_FDRI1HawEeSzs5ZTobn7BA" type="6001">
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FDRI1XawEeSzs5ZTobn7BA" y="-10"/>
@@ -706,6 +694,21 @@
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x0PYQ3boEeSiz69BrNdVOg" points="[5, 0, -81, -1]$[87, -4, 1, -5]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x0P_VnboEeSiz69BrNdVOg" id="(0.5,0.0)"/>
           </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_sCnUMHgiEeS0srkbm8AcIQ" type="4001" element="_sBhvEHgiEeS0srkbm8AcIQ" source="_LaXciHaqEeSzs5ZTobn7BA" target="_w0lB8navEeSzs5ZTobn7BA">
+            <children xmi:type="notation:Node" xmi:id="_sC4Z8HgiEeS0srkbm8AcIQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sC4Z8XgiEeS0srkbm8AcIQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_sC5BAHgiEeS0srkbm8AcIQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sC5BAXgiEeS0srkbm8AcIQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_sC5oEHgiEeS0srkbm8AcIQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sC5oEXgiEeS0srkbm8AcIQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_sCn7QHgiEeS0srkbm8AcIQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_sCn7QXgiEeS0srkbm8AcIQ" fontName="Ubuntu" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sCn7QngiEeS0srkbm8AcIQ" points="[15, -1, -89, 0]$[102, -3, -2, -2]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sC6PIHgiEeS0srkbm8AcIQ" id="(0.3,0.2)"/>
+          </edges>
         </data>
       </ownedAnnotationEntries>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_CuzcwHHXEeStNq1CDH4zxA" name="AND">
@@ -716,22 +719,22 @@
           <semanticElements xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.0/@inputVariables.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ8lwHaqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ8lwXaqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ8lwnaqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ8lw3aqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ9M0HaqEeSzs5ZTobn7BA" name="IN22" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.0/@inputVariables.1"/>
           <semanticElements xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.0/@inputVariables.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ9M0XaqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9M0naqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9M03aqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ9M1HaqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_V16_8HarEeSzs5ZTobn7BA" name="OUT1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:OutputVariable" href="sample.mercury#//@functionBlocks.0/@outputVariables.0"/>
@@ -741,23 +744,23 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_V17nAHarEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_V17nAXarEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_V17nAnarEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_V17nA3arEeSzs5ZTobn7BA" red="136" green="136" blue="136"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
         </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_CuzcwXHXEeStNq1CDH4zxA" showIcon="false">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_CuzcwnHXEeStNq1CDH4zxA"/>
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
           <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Cuzcw3HXEeStNq1CDH4zxA"/>
           <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_CuzcxHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_CuzcxXHXEeStNq1CDH4zxA" red="209" green="209" blue="209"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HSGo0HHXEeStNq1CDH4zxA" name="OR">
         <target xmi:type="mercury:FunctionBlock" href="sample.mercury#//@functionBlocks.1"/>
@@ -767,22 +770,22 @@
           <semanticElements xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.1/@inputVariables.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ9z4XaqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z4naqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z43aqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z5HaqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ9z5XaqEeSzs5ZTobn7BA" name="IN22" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.1/@inputVariables.1"/>
           <semanticElements xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.1/@inputVariables.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ9z5naqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z53aqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z6HaqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ9z6XaqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_V17nBHarEeSzs5ZTobn7BA" name="OUT2" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:OutputVariable" href="sample.mercury#//@functionBlocks.1/@outputVariables.0"/>
@@ -792,28 +795,28 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_V17nBXarEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_V17nBnarEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_V17nB3arEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_V17nCHarEeSzs5ZTobn7BA" red="136" green="136" blue="136"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
         </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_HSHP4HHXEeStNq1CDH4zxA" showIcon="false">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_HSHP4XHXEeStNq1CDH4zxA"/>
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
           <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_HSHP4nHXEeStNq1CDH4zxA"/>
           <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_HSHP43HXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_HSHP5HHXEeStNq1CDH4zxA" red="209" green="209" blue="209"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_IjfYMHHXEeStNq1CDH4zxA" name="Complex_gate">
         <target xmi:type="mercury:FunctionBlock" href="sample.mercury#//@functionBlocks.2"/>
         <semanticElements xmi:type="mercury:FunctionBlock" href="sample.mercury#//@functionBlocks.2"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ-a8HaqEeSzs5ZTobn7BA" name="IN31" outgoingEdges="_6Oia8HavEeSzs5ZTobn7BA" width="3" height="3" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ-a8HaqEeSzs5ZTobn7BA" name="IN31" outgoingEdges="_sBhvEHgiEeS0srkbm8AcIQ" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.0"/>
           <semanticElements xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -821,11 +824,11 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ-a8XaqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a8naqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a83aqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a9HaqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ-a-naqEeSzs5ZTobn7BA" name="IN33" outgoingEdges="_5At88HavEeSzs5ZTobn7BA" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.1"/>
@@ -835,11 +838,11 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ-a-3aqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a_HaqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a_XaqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ-a_naqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_LZ-a_3aqEeSzs5ZTobn7BA" name="IN32" outgoingEdges="_xD-Y8HboEeSiz69BrNdVOg" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.2"/>
@@ -849,11 +852,11 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_LZ-bAHaqEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-bAXaqEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LZ-bAnaqEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_LZ-bA3aqEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='InputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_V18OEHarEeSzs5ZTobn7BA" name="OUT3" incomingEdges="_FDHX0HawEeSzs5ZTobn7BA" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="mercury:OutputVariable" href="sample.mercury#//@functionBlocks.2/@outputVariables.0"/>
@@ -863,23 +866,23 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_V18OEXarEeSzs5ZTobn7BA" showIcon="false" labelPosition="node">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_V18OEnarEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_V18OE3arEeSzs5ZTobn7BA"/>
             <color xmi:type="viewpoint:RGBValues" xmi:id="_V18OFHarEeSzs5ZTobn7BA" red="136" green="136" blue="136"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']"/>
         </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_IjfYMXHXEeStNq1CDH4zxA" showIcon="false">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_IjfYMnHXEeStNq1CDH4zxA"/>
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@style"/>
           <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_IjfYM3HXEeStNq1CDH4zxA"/>
           <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_IjfYNHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_IjfYNXHXEeStNq1CDH4zxA" red="209" green="209" blue="209"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_8smaoHZ0EeSbB4XhgSujIw" name="AND">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@functionBlocks.2/@functionCalls.0"/>
           <semanticElements xmi:type="mercury:FunctionCall" href="sample.mercury#//@functionBlocks.2/@functionCalls.0"/>
@@ -891,11 +894,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_h2SJkHaiEeSzs5ZTobn7BA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_h2SwoHaiEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_h2SwoXaiEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_h2SwonaiEeSzs5ZTobn7BA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_h2TXsHaiEeSzs5ZTobn7BA" name="IN11" incomingEdges="_5At88HavEeSzs5ZTobn7BA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.0"/>
@@ -905,11 +908,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_h2T-wHaiEeSzs5ZTobn7BA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_h2T-wXaiEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_h2T-wnaiEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_h2T-w3aiEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_h2Ul0HaiEeSzs5ZTobn7BA" name="IN22" incomingEdges="_xD-Y8HboEeSiz69BrNdVOg" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@inputs.1"/>
@@ -919,23 +922,23 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_h2VM4HaiEeSzs5ZTobn7BA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_h2VM4XaiEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_h2VM4naiEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_h2VM43aiEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_8stIUHZ0EeSbB4XhgSujIw" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIUXZ0EeSbB4XhgSujIw"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIUnZ0EeSbB4XhgSujIw"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIU3Z0EeSbB4XhgSujIw" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_8stIVHZ0EeSbB4XhgSujIw" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']"/>
         </ownedDiagramElements>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_wDI98HavEeSzs5ZTobn7BA" name="OR">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@functionBlocks.2/@functionCalls.1"/>
@@ -948,11 +951,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_w0dGIHavEeSzs5ZTobn7BA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGIXavEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGInavEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_w0dGI3avEeSzs5ZTobn7BA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference2']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_w0dGJHavEeSzs5ZTobn7BA" name="IN21" incomingEdges="_4CeMAHavEeSzs5ZTobn7BA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.1/@inputs.0"/>
@@ -962,13 +965,13 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_w0dGJXavEeSzs5ZTobn7BA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGJnavEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGJ3avEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_w0dGKHavEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
           </ownedBorderedNodes>
-          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_w0dGKXavEeSzs5ZTobn7BA" name="IN22" incomingEdges="_6Oia8HavEeSzs5ZTobn7BA" width="0" height="0" resizeKind="NSEW">
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_w0dGKXavEeSzs5ZTobn7BA" name="IN22" incomingEdges="_sBhvEHgiEeS0srkbm8AcIQ" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.1/@inputs.1"/>
             <semanticElements xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.1/@inputs.1"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -976,23 +979,23 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_w0dGKnavEeSzs5ZTobn7BA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGK3avEeSzs5ZTobn7BA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w0dGLHavEeSzs5ZTobn7BA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_w0dGLXavEeSzs5ZTobn7BA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference2']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_wDI98XavEeSzs5ZTobn7BA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_wDI98navEeSzs5ZTobn7BA"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_wDI983avEeSzs5ZTobn7BA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_wDI99HavEeSzs5ZTobn7BA" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_wDI99XavEeSzs5ZTobn7BA" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@subContainerMappings[name='EmbeddedFunctionCallContainer']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kFbDMHHXEeStNq1CDH4zxA" name="MyLogic">
@@ -1006,11 +1009,11 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_GjRXcHHYEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_GjRXcXHYEeStNq1CDH4zxA"/>
-            <description xmi:type="style:DotDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
+            <description xmi:type="style:DotDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_GjRXcnHYEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_GjRXc3HYEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_M4oXAHHYEeStNq1CDH4zxA" outgoingEdges="_ShljkHHYEeStNq1CDH4zxA _S-x14HHYEeStNq1CDH4zxA _eB_EoHHYEeStNq1CDH4zxA" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
@@ -1020,33 +1023,33 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_M4o-EHHYEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_M4o-EXHYEeStNq1CDH4zxA"/>
-            <description xmi:type="style:DotDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
+            <description xmi:type="style:DotDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_M4o-EnHYEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_M4o-E3HYEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Q41dEHHYEeStNq1CDH4zxA" outgoingEdges="_TwtpIHHYEeStNq1CDH4zxA _gBkWwHHYEeStNq1CDH4zxA" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
           <semanticElements xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_Q42EIHHYEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Q42EIXHYEeStNq1CDH4zxA"/>
-            <description xmi:type="style:DotDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
+            <description xmi:type="style:DotDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Q42EInHYEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_Q42EI3HYEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramInputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_iy2LkHHYEeStNq1CDH4zxA" incomingEdges="_kYkzQHHYEeStNq1CDH4zxA" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramOutputVariable" href="sample.mercury#//@programs.0/@outputs.0"/>
           <semanticElements xmi:type="mercury:ProgramOutputVariable" href="sample.mercury#//@programs.0/@outputs.0"/>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_iy5O4HHYEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_iy5O4XHYEeStNq1CDH4zxA"/>
-            <description xmi:type="style:DotDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']/@style"/>
+            <description xmi:type="style:DotDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_iy5O4nHYEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_iy5O43HYEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_jGJiEHHYEeStNq1CDH4zxA" incomingEdges="_k-HJQHHYEeStNq1CDH4zxA" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="mercury:ProgramOutputVariable" href="sample.mercury#//@programs.0/@outputs.1"/>
@@ -1056,23 +1059,23 @@
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:Dot" xmi:id="_jGKJIHHYEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_jGKJIXHYEeStNq1CDH4zxA"/>
-            <description xmi:type="style:DotDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']/@style"/>
+            <description xmi:type="style:DotDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_jGKJInHYEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_jGKJI3HYEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable']"/>
         </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_kFbDMXHXEeStNq1CDH4zxA" showIcon="false">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_kFbDMnHXEeStNq1CDH4zxA"/>
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@style"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@style"/>
           <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_kFbDM3HXEeStNq1CDH4zxA"/>
           <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_kFbDNHHXEeStNq1CDH4zxA" red="204" green="242" blue="166"/>
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_kFbDNXHXEeStNq1CDH4zxA" red="204" green="242" blue="166"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mnxEIHHXEeStNq1CDH4zxA" name="OR">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@programs.0/@functionCalls.0"/>
           <semanticElements xmi:type="mercury:FunctionCall" href="sample.mercury#//@programs.0/@functionCalls.0"/>
@@ -1084,11 +1087,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_oANdwHHXEeStNq1CDH4zxA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_oANdwXHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_oANdwnHXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_oANdw3HXEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_oAOE0HHXEeStNq1CDH4zxA" name="IN21" incomingEdges="_ShljkHHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.0/@inputs.0"/>
@@ -1098,11 +1101,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_oARvMHHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_oARvMXHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_oARvMnHXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_oARvM3HXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_oASWQHHXEeStNq1CDH4zxA" name="IN22" incomingEdges="_R9afgHHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.0/@inputs.1"/>
@@ -1112,23 +1115,23 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_oASWQXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_oASWQnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_oASWQ3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_oASWRHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_mn3KwHHXEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_mn3KwXHXEeStNq1CDH4zxA"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_mn3KwnHXEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_mn3Kw3HXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_mn3KxHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
         </ownedDiagramElements>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qwlToHHXEeStNq1CDH4zxA" name="Complex_gate">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@programs.0/@functionCalls.1"/>
@@ -1141,11 +1144,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_sS-6gHHXEeStNq1CDH4zxA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sS-6gXHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sS-6gnHXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_sS-6g3HXEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_sS-6hHHXEeStNq1CDH4zxA" name="IN31" incomingEdges="_uo3R8HanEeSzs5ZTobn7BA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.1/@inputs.0"/>
@@ -1155,11 +1158,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_sS-6hXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sS-6hnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sS-6h3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_sS-6iHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_sS_hlHHXEeStNq1CDH4zxA" name="IN33" incomingEdges="_eB_EoHHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.1/@inputs.1"/>
@@ -1169,11 +1172,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_sS_hlXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sS_hlnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sS_hl3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_sS_hmHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_sTAIoHHXEeStNq1CDH4zxA" name="IN32" incomingEdges="_gBkWwHHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.1/@inputs.2"/>
@@ -1183,23 +1186,23 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_sTAIoXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sTAIonHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sTAIo3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_sTAIpHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qwl6sHHXEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qwl6sXHXEeStNq1CDH4zxA"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qwl6snHXEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qwl6s3HXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qwl6tHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
         </ownedDiagramElements>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xM6d4HHXEeStNq1CDH4zxA" name="OR">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@programs.0/@functionCalls.2"/>
@@ -1212,11 +1215,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_yA4RcXHXEeStNq1CDH4zxA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yA4RcnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yA4Rc3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_yA4RdHHXEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_yA44gHHXEeStNq1CDH4zxA" name="IN21" incomingEdges="_TwtpIHHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.2/@inputs.0"/>
@@ -1226,11 +1229,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_yA44gXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yA44gnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yA44g3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_yA44hHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_yA44hXHXEeStNq1CDH4zxA" name="IN22" incomingEdges="_S-x14HHYEeStNq1CDH4zxA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.2/@inputs.1"/>
@@ -1240,23 +1243,23 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_yA5fkHHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yA5fkXHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yA5fknHXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_yA5fk3HXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xM7sAHHXEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_xM7sAXHXEeStNq1CDH4zxA"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_xM7sAnHXEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_xM7sA3HXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_xM7sBHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
         </ownedDiagramElements>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_0vS_gHHXEeStNq1CDH4zxA" name="AND">
           <target xmi:type="mercury:FunctionCall" href="sample.mercury#//@programs.0/@functionCalls.3"/>
@@ -1269,11 +1272,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_1tqFMHHXEeStNq1CDH4zxA" showIcon="false" labelAlignment="LEFT">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqFMXHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqFMnHXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_1tqFM3HXEeStNq1CDH4zxA" red="39" green="76" blue="114"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_1tqFNHHXEeStNq1CDH4zxA" name="IN11" incomingEdges="_t5aK8HanEeSzs5ZTobn7BA" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.3/@inputs.0"/>
@@ -1283,11 +1286,11 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_1tqFNXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqFNnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqFN3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_1tqFOHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_1tqsQHHXEeStNq1CDH4zxA" name="IN22" incomingEdges="_xzyFQHboEeSiz69BrNdVOg" width="0" height="0" resizeKind="NSEW">
             <target xmi:type="mercury:FunctionInputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.3/@inputs.1"/>
@@ -1297,206 +1300,206 @@
             <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_1tqsQXHXEeStNq1CDH4zxA" showIcon="false">
               <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqsQnHXEeStNq1CDH4zxA"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']/@style"/>
               <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_1tqsQ3HXEeStNq1CDH4zxA"/>
               <color xmi:type="viewpoint:RGBValues" xmi:id="_1tqsRHHXEeStNq1CDH4zxA" red="239" green="41" blue="41"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionInputVariableReference']"/>
           </ownedBorderedNodes>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
           <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
           <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_0vTmkHHXEeStNq1CDH4zxA" showIcon="false">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0vTmkXHXEeStNq1CDH4zxA"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@style"/>
             <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_0vTmknHXEeStNq1CDH4zxA"/>
             <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0vTmk3HXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
             <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0vTmlHHXEeStNq1CDH4zxA" red="255" green="255" blue="255"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_R9afgHHYEeStNq1CDH4zxA" sourceNode="_GjPiQHHYEeStNq1CDH4zxA" targetNode="_oASWQHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_R9c7wHHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_R9c7wXHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_R9c7wnHYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_R9c7w3HYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ShljkHHYEeStNq1CDH4zxA" sourceNode="_M4oXAHHYEeStNq1CDH4zxA" targetNode="_oAOE0HHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ShljkXHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_ShljknHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Shljk3HYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ShljlHHYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_S-x14HHYEeStNq1CDH4zxA" sourceNode="_M4oXAHHYEeStNq1CDH4zxA" targetNode="_yA44hXHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_S-x14XHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_S-x14nHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_S-x143HYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_S-x15HHYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_TwtpIHHYEeStNq1CDH4zxA" sourceNode="_Q41dEHHYEeStNq1CDH4zxA" targetNode="_yA44gHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_TwuQMHHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_TwuQMXHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_TwuQMnHYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_TwuQM3HYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_eB_EoHHYEeStNq1CDH4zxA" sourceNode="_M4oXAHHYEeStNq1CDH4zxA" targetNode="_sS_hlHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.1"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_eB_rsHHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_eB_rsXHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_eB_rsnHYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_eB_rs3HYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_gBkWwHHYEeStNq1CDH4zxA" sourceNode="_Q41dEHHYEeStNq1CDH4zxA" targetNode="_sTAIoHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:ProgramInputVariable" href="sample.mercury#//@programs.0/@inputs.2"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_gBkWwXHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_gBkWwnHYEeStNq1CDH4zxA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_gBkWw3HYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_gBkWxHHYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEnters']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kYkzQHHYEeStNq1CDH4zxA" sourceNode="_1tpeIHHXEeStNq1CDH4zxA" targetNode="_iy2LkHHYEeStNq1CDH4zxA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.3/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_kYkzQXHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_s3hVgXHYEeStNq1CDH4zxA"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_kYkzQ3HYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_kYkzRHHYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k-HJQHHYEeStNq1CDH4zxA" sourceNode="_sS-TcHHXEeStNq1CDH4zxA" targetNode="_jGJiEHHYEeStNq1CDH4zxA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.1/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k-HJQXHYEeStNq1CDH4zxA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_s3hVgHHYEeStNq1CDH4zxA"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k-HJQ3HYEeStNq1CDH4zxA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_k-HJRHHYEeStNq1CDH4zxA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExits']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_t5aK8HanEeSzs5ZTobn7BA" sourceNode="_yA4RcHHXEeStNq1CDH4zxA" targetNode="_1tqFNHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.2/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_t5aK8XanEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_t5aK8nanEeSzs5ZTobn7BA" red="156" green="12" blue="12"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_t5aK83anEeSzs5ZTobn7BA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_t5aK9HanEeSzs5ZTobn7BA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_uo3R8HanEeSzs5ZTobn7BA" sourceNode="_yA4RcHHXEeStNq1CDH4zxA" targetNode="_sS-6hHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.2/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_uo3R8XanEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_uo3R8nanEeSzs5ZTobn7BA" red="156" green="12" blue="12"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_uo3R83anEeSzs5ZTobn7BA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_uo3R9HanEeSzs5ZTobn7BA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_4CeMAHavEeSzs5ZTobn7BA" sourceNode="_h2RigHaiEeSzs5ZTobn7BA" targetNode="_w0dGJHavEeSzs5ZTobn7BA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.0/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_4CeMAXavEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry2']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry2']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_4CeMAnavEeSzs5ZTobn7BA" red="156" green="12" blue="12"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_4CeMA3avEeSzs5ZTobn7BA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_4CeMBHavEeSzs5ZTobn7BA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry2']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry2']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5At88HavEeSzs5ZTobn7BA" sourceNode="_LZ-a-naqEeSzs5ZTobn7BA" targetNode="_h2TXsHaiEeSzs5ZTobn7BA">
         <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.1"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5At88XavEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_5At88navEeSzs5ZTobn7BA" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5At883avEeSzs5ZTobn7BA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_5At89HavEeSzs5ZTobn7BA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_6Oia8HavEeSzs5ZTobn7BA" sourceNode="_LZ-a8HaqEeSzs5ZTobn7BA" targetNode="_w0dGKXavEeSzs5ZTobn7BA">
-        <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.0"/>
-        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_6Oia8XavEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
-          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_6Oia8navEeSzs5ZTobn7BA" red="136" green="136" blue="136"/>
-          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_6Oia83avEeSzs5ZTobn7BA">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_6Oia9HavEeSzs5ZTobn7BA"/>
-          </centerLabelStyle>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_FDHX0HawEeSzs5ZTobn7BA" sourceNode="_w0cfEHavEeSzs5ZTobn7BA" targetNode="_V18OEHarEeSzs5ZTobn7BA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@functionBlocks.2/@functionCalls.1/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_FDHX0XawEeSzs5ZTobn7BA" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExitsFromFunction']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExitsFromFunction']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_FDHX0nawEeSzs5ZTobn7BA"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_FDHX03awEeSzs5ZTobn7BA">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_FDHX1HawEeSzs5ZTobn7BA"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExitsFromFunction']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataExitsFromFunction']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_xD-Y8HboEeSiz69BrNdVOg" sourceNode="_LZ-a_3aqEeSzs5ZTobn7BA" targetNode="_h2Ul0HaiEeSzs5ZTobn7BA">
         <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.2"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_xD-Y8XboEeSiz69BrNdVOg" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_xD-Y8nboEeSiz69BrNdVOg" red="136" green="136" blue="136"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_xD-Y83boEeSiz69BrNdVOg">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_xD-Y9HboEeSiz69BrNdVOg"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_xzyFQHboEeSiz69BrNdVOg" sourceNode="_oAJMUHHXEeStNq1CDH4zxA" targetNode="_1tqsQHHXEeStNq1CDH4zxA">
         <target xmi:type="mercury:FunctionOutputVariableReference" href="sample.mercury#//@programs.0/@functionCalls.0/@outputs.0"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_xzyFQXboEeSiz69BrNdVOg" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_xzyFQnboEeSiz69BrNdVOg" red="156" green="12" blue="12"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_xzyFQ3boEeSiz69BrNdVOg">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_xzyFRHboEeSiz69BrNdVOg"/>
           </centerLabelStyle>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataCarry']"/>
       </ownedDiagramElements>
-      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']"/>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_sBhvEHgiEeS0srkbm8AcIQ" sourceNode="_LZ-a8HaqEeSzs5ZTobn7BA" targetNode="_w0dGKXavEeSzs5ZTobn7BA">
+        <target xmi:type="mercury:InputVariable" href="sample.mercury#//@functionBlocks.2/@inputVariables.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_sBiWIHgiEeS0srkbm8AcIQ" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_sBiWIXgiEeS0srkbm8AcIQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_sBiWIngiEeS0srkbm8AcIQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sBiWI3giEeS0srkbm8AcIQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@edgeMappings[name='DataEntersToFunction']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']"/>
       <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_BhswcXHXEeStNq1CDH4zxA"/>
-      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer"/>
       <target xmi:type="mercury:AllocationUnit" href="sample.mercury#/"/>
     </ownedRepresentations>
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']"/>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/hu.bme.mit.mercury.design/description/mercury.odesign#//@ownedViewpoints[name='AllocationUnit']"/>
   </ownedViews>
 </viewpoint:DAnalysis>
