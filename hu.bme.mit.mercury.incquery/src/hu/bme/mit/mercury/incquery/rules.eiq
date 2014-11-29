@@ -24,7 +24,7 @@ pattern notOrphanDataSink(ds : DataSink) {
 
 @Constraint(targetEditorId = "org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID", location = fb, severity = "warning", message = "Function block is never used")
 pattern warnUncalledFunctionBlock(fb: FunctionBlock){
-	0 == count find uncalledFunctionBlock(fb);
+	neg find uncalledFunctionBlock(fb);
 }
 
 pattern uncalledFunctionBlock(fb: FunctionBlock){
@@ -138,7 +138,7 @@ pattern programWithoutFunctionCall (p : Program) {
 }
 
 pattern programWithZeroFunctionCalls (p : Program) {
-	0 != count find programFunctionCalls(p);
+	find programFunctionCalls(p);
 }
 
 pattern programFunctionCalls (p : Program){
