@@ -26,10 +26,8 @@ public class StartupClass implements IStartup {
 				do {
 					window = workbench.getActiveWorkbenchWindow();
 					if (window != null) {
-						System.out.println("Toltott");
 						IWorkbenchPage page = window.getActivePage();
 						if (page != null) {
-							System.out.println("Nagyon jooo!");
 							page.addPartListener(EditorPartListener.getInstance());
 						}
 						
@@ -43,7 +41,6 @@ public class StartupClass implements IStartup {
 								ResourceSet resourceSet = siriusEditor.getEditingDomain().getResourceSet();
 								
 								if(ResourceSetRegistry.register(resourceSet)){
-									System.out.println("Hello Sirius editor");
 									siriusEditor.getEditingDomain().getResourceSet().eAdapters().add(new SiriusEditorContentAdapter());
 								}
 								

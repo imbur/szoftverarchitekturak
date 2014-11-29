@@ -66,7 +66,6 @@ public class EditorPartListener implements IPartListener {
 				ResourceSet resourceSet = siriusEditor.getEditingDomain().getResourceSet();
 				
 				if(ResourceSetRegistry.register(resourceSet)){
-					System.out.println("Hello Sirius editor");
 					siriusEditor.getEditingDomain().getResourceSet().eAdapters().add(new SiriusEditorContentAdapter());
 				}
 				

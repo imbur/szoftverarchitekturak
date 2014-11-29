@@ -114,10 +114,6 @@ public class SiriusEditorContentAdapter extends EContentAdapter {
 				}
         	}
         	
-        	System.out.println(notification.getOldValue());
-        	System.out.println(notification.getNotifier());
-        	System.out.println(notification.getFeature());
-        	System.out.println();
         }
         
         if(notification.getOldValue() instanceof OutputVariable && notification.getNotifier() instanceof FunctionBlock && notification.getFeature() instanceof EReference){
@@ -138,10 +134,6 @@ public class SiriusEditorContentAdapter extends EContentAdapter {
 				}
         	}
         	
-        	System.out.println(notification.getOldValue());
-        	System.out.println(notification.getNotifier());
-        	System.out.println(notification.getFeature());
-        	System.out.println();
         }
         
       }
