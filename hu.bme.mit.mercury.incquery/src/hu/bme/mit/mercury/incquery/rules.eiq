@@ -134,11 +134,7 @@ InputVariable.name(iv, n);
 
 @Constraint(targetEditorId = "org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID", location = p, severity = "warning", message = "Useless Program definition. Program does not contain any function calls.")
 pattern programWithoutFunctionCall (p : Program) {
-	neg find programWithZeroFunctionCalls(p);
-}
-
-pattern programWithZeroFunctionCalls (p : Program) {
-	find programFunctionCalls(p);
+	neg find programFunctionCalls(p);
 }
 
 pattern programFunctionCalls (p : Program){
