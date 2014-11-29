@@ -350,7 +350,7 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yA-YFXHXEeStNq1CDH4zxA"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_yA9J83HXEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yA9J9HHXEeStNq1CDH4zxA" x="-2" y="48" width="0" height="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yA9J9HHXEeStNq1CDH4zxA" x="-5" y="48" width="13" height="13"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_yA9J93HXEeStNq1CDH4zxA" type="3012" element="_yA44hXHXEeStNq1CDH4zxA">
                   <children xmi:type="notation:Node" xmi:id="_yA9xAnHXEeStNq1CDH4zxA" type="5010">
@@ -558,7 +558,7 @@
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_gBv88HHYEeStNq1CDH4zxA"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_gBv88XHYEeStNq1CDH4zxA" fontName="Ubuntu" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gBv88nHYEeStNq1CDH4zxA" points="[10, 0, -381, 34]$[338, 0, -53, 34]$[338, -34, -53, 0]$[386, -34, -5, 0]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gBv88nHYEeStNq1CDH4zxA" points="[10, 0, -381, 34]$[206, 16, -185, 50]$[338, 0, -53, 34]$[338, -34, -53, 0]$[386, -34, -5, 0]"/>
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_kYvyYHHYEeStNq1CDH4zxA" type="4001" element="_kYkzQHHYEeStNq1CDH4zxA" source="_1tuWoHHXEeStNq1CDH4zxA" target="_izPNIHHYEeStNq1CDH4zxA">
             <children xmi:type="notation:Node" xmi:id="_kYwZcHHYEeStNq1CDH4zxA" type="6001">
