@@ -558,10 +558,10 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KLHbonfdEeSrUvGR_Zs9aw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_KLG0kXfdEeSrUvGR_Zs9aw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KLG0knfdEeSrUvGR_Zs9aw" x="665" y="156" width="20" height="20"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KLG0knfdEeSrUvGR_Zs9aw" x="509" y="156" width="20" height="20"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_Qvjq8XfbEeSrUvGR_Zs9aw" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qvjq8nfbEeSrUvGR_Zs9aw" x="24" y="24" width="675" height="303"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qvjq8nfbEeSrUvGR_Zs9aw" x="24" y="24" width="519" height="303"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_M-nTcHfcEeSrUvGR_Zs9aw" type="2002" element="_M-eJgHfcEeSrUvGR_Zs9aw">
             <children xmi:type="notation:Node" xmi:id="_M-nTc3fcEeSrUvGR_Zs9aw" type="5006"/>
@@ -751,7 +751,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aWONwnfcEeSrUvGR_Zs9aw" x="509" y="96" width="30" height="30"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_M-nTcXfcEeSrUvGR_Zs9aw" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M-nTcnfcEeSrUvGR_Zs9aw" x="120" y="348" width="519" height="231"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M-nTcnfcEeSrUvGR_Zs9aw" x="24" y="348" width="519" height="231"/>
           </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_4tufEnfZEeSrUvGR_Zs9aw"/>
           <edges xmi:type="notation:Edge" xmi:id="_Dan0sHfcEeSrUvGR_Zs9aw" type="4001" element="_DaQoUHfcEeSrUvGR_Zs9aw" source="_U2ayoHfbEeSrUvGR_Zs9aw" target="_Sa-D4HfbEeSrUvGR_Zs9aw">
