@@ -128,7 +128,7 @@ pattern programWithoutFunctionCall (p : Program) {
 }
 
 pattern programWithZeroFunctionCalls (p : Program) {
-	0 == count find programFunctionCalls(p);
+	0 != count find programFunctionCalls(p);
 }
 
 pattern programFunctionCalls (p : Program){
