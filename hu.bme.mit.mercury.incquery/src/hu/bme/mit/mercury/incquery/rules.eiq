@@ -5,10 +5,20 @@ import "http://www.example.org/mercury"
 
 @Constraint(targetEditorId = "org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID", location = ds, severity = "error", message = "Orphan datasinks are not allowed")
 pattern noOrphanDataSink(ds : DataSink) {
-	0 == count find orphanDataSink(ds);
+	neg find notOrphanDataSink(ds); 
+	neg find dataSinkForEmptyDeclaration(ds);
 }
 
-pattern orphanDataSink(ds : DataSink) {
+pattern dataSinkForEmptyDeclaration(ds){
+	FunctionBlock.outputVariables(fb,ds);
+	neg find nonEmptyDeclaration(fb);
+}
+
+private pattern nonEmptyDeclaration(fb){
+	FunctionBlock.functionCalls(fb,_);
+}
+
+pattern notOrphanDataSink(ds : DataSink) {
 	DataSink.source(ds,_);
 }
 
