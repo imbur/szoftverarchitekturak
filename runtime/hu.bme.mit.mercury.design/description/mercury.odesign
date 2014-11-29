@@ -25,25 +25,25 @@
         <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.InputVariable">
           <audits auditExpression="[errorService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.FunctionInputVariableReference">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.FunctionInputVariableReference">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.FunctionOutputVariableReference">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.FunctionOutputVariableReference">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.OrganizationUnit">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.OrganizationUnit">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.ProgramInputVariable">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.ProgramInputVariable">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.ProgramOutputVariable">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.ProgramOutputVariable">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.OutputVariable">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.OutputVariable">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.InputVariable">
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" message="[messageService(self)/]" targetClass="mercury.InputVariable">
           <audits auditExpression="[warningService(self)/]"/>
         </ownedRules>
       </validationSet>
