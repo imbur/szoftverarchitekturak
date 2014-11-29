@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="mercury" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="mercury" version="8.1.0">
   <ownedViewpoints name="AllocationUnit" modelFileExtension="mercury">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="AllocationUnitDiagram" domainClass="mercury.AllocationUnit" rootExpression="[thisEObject/]">
       <metamodel href="http://www.example.org/mercury#/"/>
+      <validationSet>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.FunctionInputVariableReference">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.FunctionOutputVariableReference">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.OrganizationUnit">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.ProgramInputVariable">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.ProgramOutputVariable">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.OutputVariable">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="[messageService(self)/]" targetClass="mercury.InputVariable">
+          <audits auditExpression="[errorService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.FunctionInputVariableReference">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.FunctionOutputVariableReference">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.OrganizationUnit">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.ProgramInputVariable">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.ProgramOutputVariable">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.OutputVariable">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" level="WARNING" targetClass="mercury.InputVariable">
+          <audits auditExpression="[warningService(self)/]"/>
+        </ownedRules>
+      </validationSet>
       <defaultLayer name="Default">
         <edgeMappings name="DataExits" deletionDescription="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteConnection']" sourceMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@subContainerMappings[name='FunctionCallContainer']/@borderedNodeMappings[name='FunctionOutputVariableReference']" targetMapping="//@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='ProgramContainer']/@borderedNodeMappings[name='ProgramOutputVariable'] //@ownedViewpoints[name='AllocationUnit']/@ownedRepresentations[name='AllocationUnitDiagram']/@defaultLayer/@containerMappings[name='FunctionBlockContainer']/@borderedNodeMappings[name='OutputVariable']" targetFinderExpression="feature:target">
           <style sizeComputationExpression="2">
@@ -270,5 +314,6 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="hu.bme.mit.mercury.design.service.MercuryValidationService"/>
   </ownedViewpoints>
 </description:Group>
