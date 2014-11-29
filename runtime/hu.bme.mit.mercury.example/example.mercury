@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mercury:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mercury="http://www.example.org/mercury">
+  <allocations name="Function library">
+    <functionBlocks name="ADD" calls="//@allocations.1/@programs.0/@functionCalls.0 //@allocations.1/@programs.0/@functionCalls.1">
+      <inputVariables name="IN1"/>
+      <inputVariables name="IN2"/>
+      <outputVariables name="SUM"/>
+    </functionBlocks>
+    <functionBlocks name="EQU" calls="//@allocations.1/@functionBlocks.0/@functionCalls.0 //@allocations.1/@functionBlocks.0/@functionCalls.1">
+      <inputVariables name="IN1"/>
+      <inputVariables name="IN2"/>
+      <outputVariables name="EQU" type="Boolean"/>
+    </functionBlocks>
+    <functionBlocks name="CONST">
+      <outputVariables name="NUM"/>
+    </functionBlocks>
+    <functionBlocks name="OR" calls="//@allocations.1/@functionBlocks.0/@functionCalls.2">
+      <inputVariables name="IN1" type="Boolean"/>
+      <inputVariables name="IN2" type="Boolean"/>
+      <outputVariables name="OUT" type="Boolean"/>
+    </functionBlocks>
+  </allocations>
+  <allocations name="Allocation1">
+    <programs name="DifferenceEquals">
+      <functionCalls calledFunction="//@allocations.0/@functionBlocks.0">
+        <inputs source="//@allocations.1/@programs.0/@inputs.2" variable="//@allocations.0/@functionBlocks.0/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@programs.0/@inputs.0" variable="//@allocations.0/@functionBlocks.0/@inputVariables.1"/>
+        <outputs target="//@allocations.1/@programs.0/@functionCalls.2/@inputs.2" variable="//@allocations.0/@functionBlocks.0/@outputVariables.0"/>
+      </functionCalls>
+      <functionCalls calledFunction="//@allocations.0/@functionBlocks.0">
+        <inputs source="//@allocations.1/@programs.0/@inputs.1" variable="//@allocations.0/@functionBlocks.0/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@programs.0/@inputs.2" variable="//@allocations.0/@functionBlocks.0/@inputVariables.1"/>
+        <outputs target="//@allocations.1/@programs.0/@functionCalls.2/@inputs.3" variable="//@allocations.0/@functionBlocks.0/@outputVariables.0"/>
+      </functionCalls>
+      <functionCalls calledFunction="//@allocations.1/@functionBlocks.0">
+        <inputs source="//@allocations.1/@programs.0/@inputs.0" variable="//@allocations.1/@functionBlocks.0/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@programs.0/@inputs.1" variable="//@allocations.1/@functionBlocks.0/@inputVariables.1"/>
+        <inputs source="//@allocations.1/@programs.0/@functionCalls.0/@outputs.0" variable="//@allocations.1/@functionBlocks.0/@inputVariables.2"/>
+        <inputs source="//@allocations.1/@programs.0/@functionCalls.1/@outputs.0" variable="//@allocations.1/@functionBlocks.0/@inputVariables.3"/>
+        <outputs target="//@allocations.1/@programs.0/@outputs.0" variable="//@allocations.1/@functionBlocks.0/@outputVariables.0"/>
+      </functionCalls>
+      <inputs target="//@allocations.1/@programs.0/@functionCalls.0/@inputs.1 //@allocations.1/@programs.0/@functionCalls.2/@inputs.0"/>
+      <inputs target="//@allocations.1/@programs.0/@functionCalls.1/@inputs.0 //@allocations.1/@programs.0/@functionCalls.2/@inputs.1"/>
+      <inputs target="//@allocations.1/@programs.0/@functionCalls.1/@inputs.1 //@allocations.1/@programs.0/@functionCalls.0/@inputs.0"/>
+      <outputs source="//@allocations.1/@programs.0/@functionCalls.2/@outputs.0" type="Boolean"/>
+    </programs>
+    <functionBlocks name="ExtractedFunction" calls="//@allocations.1/@programs.0/@functionCalls.2">
+      <functionCalls calledFunction="//@allocations.0/@functionBlocks.1">
+        <inputs source="//@allocations.1/@functionBlocks.0/@inputVariables.3" variable="//@allocations.0/@functionBlocks.1/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@functionBlocks.0/@inputVariables.0" variable="//@allocations.0/@functionBlocks.1/@inputVariables.1"/>
+        <outputs target="//@allocations.1/@functionBlocks.0/@functionCalls.2/@inputs.1" variable="//@allocations.0/@functionBlocks.1/@outputVariables.0"/>
+      </functionCalls>
+      <functionCalls calledFunction="//@allocations.0/@functionBlocks.1">
+        <inputs source="//@allocations.1/@functionBlocks.0/@inputVariables.2" variable="//@allocations.0/@functionBlocks.1/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@functionBlocks.0/@inputVariables.1" variable="//@allocations.0/@functionBlocks.1/@inputVariables.1"/>
+        <outputs target="//@allocations.1/@functionBlocks.0/@functionCalls.2/@inputs.0" variable="//@allocations.0/@functionBlocks.1/@outputVariables.0"/>
+      </functionCalls>
+      <functionCalls calledFunction="//@allocations.0/@functionBlocks.3">
+        <inputs source="//@allocations.1/@functionBlocks.0/@functionCalls.1/@outputs.0" variable="//@allocations.0/@functionBlocks.3/@inputVariables.0"/>
+        <inputs source="//@allocations.1/@functionBlocks.0/@functionCalls.0/@outputs.0" variable="//@allocations.0/@functionBlocks.3/@inputVariables.1"/>
+        <outputs target="//@allocations.1/@functionBlocks.0/@outputVariables.0" variable="//@allocations.0/@functionBlocks.3/@outputVariables.0"/>
+      </functionCalls>
+      <inputVariables name="Num1" target="//@allocations.1/@functionBlocks.0/@functionCalls.0/@inputs.1"/>
+      <inputVariables name="Num2" target="//@allocations.1/@functionBlocks.0/@functionCalls.1/@inputs.1"/>
+      <inputVariables name="Sum1" target="//@allocations.1/@functionBlocks.0/@functionCalls.1/@inputs.0"/>
+      <inputVariables name="Sum2" target="//@allocations.1/@functionBlocks.0/@functionCalls.0/@inputs.0"/>
+      <outputVariables name="RES" type="Boolean" source="//@allocations.1/@functionBlocks.0/@functionCalls.2/@outputs.0"/>
+    </functionBlocks>
+  </allocations>
+</mercury:Root>
