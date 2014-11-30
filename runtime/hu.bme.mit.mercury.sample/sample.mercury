@@ -4,36 +4,36 @@
     <functionCalls calledFunction="//@functionBlocks.1">
       <inputs source="//@programs.0/@inputs.1" variable="//@functionBlocks.1/@inputVariables.0"/>
       <inputs source="//@programs.0/@inputs.0" variable="//@functionBlocks.1/@inputVariables.1"/>
-      <outputs target="//@programs.0/@functionCalls.3/@inputs.1" variable="//@functionBlocks.1/@outputVariables.0"/>
+      <outputs target="//@programs.0/@functionCalls.2/@inputs.1" variable="//@functionBlocks.1/@outputVariables.0"/>
     </functionCalls>
     <functionCalls calledFunction="//@functionBlocks.2">
-      <inputs source="//@programs.0/@functionCalls.2/@outputs.0" variable="//@functionBlocks.2/@inputVariables.0"/>
+      <inputs source="//@programs.0/@functionCalls.3/@outputs.0" variable="//@functionBlocks.2/@inputVariables.0"/>
       <inputs source="//@programs.0/@inputs.1" variable="//@functionBlocks.2/@inputVariables.1"/>
       <inputs source="//@programs.0/@inputs.2" variable="//@functionBlocks.2/@inputVariables.2"/>
       <outputs target="//@programs.0/@outputs.1" variable="//@functionBlocks.2/@outputVariables.0"/>
     </functionCalls>
-    <functionCalls calledFunction="//@functionBlocks.1">
-      <inputs source="//@programs.0/@inputs.2" variable="//@functionBlocks.1/@inputVariables.0"/>
-      <inputs source="//@programs.0/@inputs.1" variable="//@functionBlocks.1/@inputVariables.1"/>
-      <outputs target="//@programs.0/@functionCalls.3/@inputs.0 //@programs.0/@functionCalls.1/@inputs.0" variable="//@functionBlocks.1/@outputVariables.0"/>
-    </functionCalls>
     <functionCalls calledFunction="//@functionBlocks.0">
-      <inputs source="//@programs.0/@functionCalls.2/@outputs.0" variable="//@functionBlocks.0/@inputVariables.0"/>
+      <inputs source="//@programs.0/@functionCalls.3/@outputs.0" variable="//@functionBlocks.0/@inputVariables.0"/>
       <inputs source="//@programs.0/@functionCalls.0/@outputs.0" variable="//@functionBlocks.0/@inputVariables.1"/>
       <outputs target="//@programs.0/@outputs.0" variable="//@functionBlocks.0/@outputVariables.0"/>
     </functionCalls>
-    <inputs target="//@programs.0/@functionCalls.0/@inputs.1"/>
-    <inputs target="//@programs.0/@functionCalls.0/@inputs.0 //@programs.0/@functionCalls.2/@inputs.1 //@programs.0/@functionCalls.1/@inputs.1" type="Boolean"/>
-    <inputs target="//@programs.0/@functionCalls.2/@inputs.0 //@programs.0/@functionCalls.1/@inputs.2" type="Double"/>
-    <outputs source="//@programs.0/@functionCalls.3/@outputs.0"/>
-    <outputs source="//@programs.0/@functionCalls.1/@outputs.0"/>
+    <functionCalls calledFunction="//@functionBlocks.1">
+      <inputs source="//@programs.0/@inputs.1" variable="//@functionBlocks.1/@inputVariables.0"/>
+      <inputs source="//@programs.0/@inputs.2" variable="//@functionBlocks.1/@inputVariables.1"/>
+      <outputs target="//@programs.0/@functionCalls.2/@inputs.0 //@programs.0/@functionCalls.1/@inputs.0" variable="//@functionBlocks.1/@outputVariables.0"/>
+    </functionCalls>
+    <inputs target="//@programs.0/@functionCalls.0/@inputs.1" type="Boolean"/>
+    <inputs target="//@programs.0/@functionCalls.0/@inputs.0 //@programs.0/@functionCalls.1/@inputs.1 //@programs.0/@functionCalls.3/@inputs.0" type="Boolean"/>
+    <inputs target="//@programs.0/@functionCalls.1/@inputs.2 //@programs.0/@functionCalls.3/@inputs.1" type="Boolean"/>
+    <outputs source="//@programs.0/@functionCalls.2/@outputs.0" type="Boolean"/>
+    <outputs source="//@programs.0/@functionCalls.1/@outputs.0" type="Boolean"/>
   </programs>
-  <functionBlocks name="AND" calls="//@programs.0/@functionCalls.3 //@functionBlocks.2/@functionCalls.0">
-    <inputVariables name="IN11" type="Double"/>
+  <functionBlocks name="AND" calls="//@programs.0/@functionCalls.2 //@functionBlocks.2/@functionCalls.0">
+    <inputVariables name="IN11" type="Boolean"/>
     <inputVariables name="IN22" type="Boolean" target="//@functionBlocks.0/@outputVariables.0"/>
     <outputVariables name="OUT1" type="Boolean" source="//@functionBlocks.0/@inputVariables.1"/>
   </functionBlocks>
-  <functionBlocks name="OR" calls="//@programs.0/@functionCalls.0 //@programs.0/@functionCalls.2 //@functionBlocks.2/@functionCalls.1">
+  <functionBlocks name="OR" calls="//@programs.0/@functionCalls.0 //@functionBlocks.2/@functionCalls.1 //@programs.0/@functionCalls.3">
     <inputVariables name="IN21" type="Boolean"/>
     <inputVariables name="IN22" type="Boolean"/>
     <outputVariables name="OUT2" type="Boolean"/>
@@ -52,6 +52,6 @@
     <inputVariables name="IN31" type="Boolean" target="//@functionBlocks.2/@functionCalls.1/@inputs.1"/>
     <inputVariables name="IN33" type="Boolean" target="//@functionBlocks.2/@functionCalls.0/@inputs.0"/>
     <inputVariables name="IN32" type="Boolean" target="//@functionBlocks.2/@functionCalls.0/@inputs.1"/>
-    <outputVariables name="OUT3" type="String" source="//@functionBlocks.2/@functionCalls.1/@outputs.0"/>
+    <outputVariables name="OUT3" type="Boolean" source="//@functionBlocks.2/@functionCalls.1/@outputs.0"/>
   </functionBlocks>
 </mercury:AllocationUnit>
